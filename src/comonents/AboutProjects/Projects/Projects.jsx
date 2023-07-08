@@ -69,7 +69,7 @@ const Projects = () => {
                     <img className="service-img" src={s} alt=""/>
                     <div className="project-name">Battle Mountain Solar & Storage</div>
                 </div>
-            </Carousel>;
+            </Carousel>
         </div>
     )
 }
