@@ -1,0 +1,42 @@
+.about-projects-wrapper{
+    height: 1335.5px;
+    background-color: #2D2D2D;
+    position: relative;
+
+}
+
+.about-projects-wrapper::before{
+    margin-top: 90px;
+    top: 25%;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #242424;
+
+    width: 45%;
+
+}
+
+
+.about-projects-content{
+    margin: 0 auto;
+    max-width: 1603px;
+    height: 100%;
+    margin-top: 180.5px;
+}
+
+@media screen and (max-width: 780px){
+    .about-projects-wrapper::before{
+        margin-top: 0;
+        top: 0;
+        content: none;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        background-color: transparent;
+
+        width: auto;
+
+    }
+}

@@ -30,7 +30,10 @@ export default function SwiperComp(props) {
                     <div className="slider-info-wrapper">
                         <h3 className="slider-text1">We are construction partners.</h3>
                         <h1 className="slider-text2">The Builders We Are The Best</h1>
-                        <a className="slider-btn" href="#">Who we are</a>
+                        <div className="slider-btn-wrapper">
+                            <a className="slider-btn" href="#">Who we are</a>
+                        </div>
+
                     </div>
 
                 </SwiperSlide>

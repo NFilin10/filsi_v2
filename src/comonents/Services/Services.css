@@ -32,6 +32,12 @@
     height: 255px !important;
 }
 
+.service-image img{
+    width: 360px !important;
+    height: 255px !important;
+}
+
+
 .service-text{
     width: 360px;
     height: 140px;
@@ -79,4 +85,51 @@
     transition: all 0.3s ease-in-out;
     width: 360px !important;
     height: 255px !important;
+}
+
+@media screen and (max-width: 780px){
+    .alice-carousel{
+        top: 0;
+        margin-top: 50px !important;
+    }
+
+    .service-wrapper{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-image{
+        width: 333px !important;
+        height: 235px !important;
+    }
+
+    .alice-carousel__stage-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .service-image img{
+        width: 333px !important;
+        height: 235px !important;
+    }
+
+    .service-image::before{
+        content: "";
+        border: none;
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+
+
+
 }

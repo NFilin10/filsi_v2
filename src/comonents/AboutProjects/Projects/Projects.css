@@ -1,0 +1,56 @@
+.projects-wrapper{
+    margin-top: 196.5px;
+    position: relative;
+    max-width: 1604px;
+}
+
+.project-section-heading{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1.3px;
+}
+
+
+
+.project{
+    max-width: 540px;
+    max-height: 705px;
+}
+
+.service-img{
+    width: 540px;
+    height: 605px;
+
+
+}
+
+.project-name{
+    max-width: 540px;
+    padding: 10px 40px;
+    background-color: #242424;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+
+
+}
+
+.react-multi-carousel-list  {
+    margin-top: 62px;
+}
+
+
+
+
+
+
+
