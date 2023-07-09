@@ -35,7 +35,7 @@ const Partners = () => {
     let partnersElements = partnersData.map(partner =>
         <div className="partners">
             <img className="partner-logo" src={partner.logo} alt=""/>
-            <h3>{partner.name}</h3>
+            {/*<h3>{partner.name}</h3>*/}
         </div>
     )
 

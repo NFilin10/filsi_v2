@@ -30,35 +30,38 @@ function Navbar() {
 
                 <nav className={`${styles.navbar}`}>
 
+                    <div className={styles.nav_content}>
+                        <a href='#home' className={`${styles.logo}`}><img src={logo} alt=""/></a>
+
+
+                        <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
+                            <li onClick={removeActive}>
+                                <a href='#home' className={`${styles.navLink}`}>Home</a>
+                            </li>
+                            <li onClick={removeActive}>
+                                <a href='#home' className={`${styles.navLink}`}>Teenused</a>
+                            </li>
+                            <li onClick={removeActive}>
+                                <a href='#home' className={`${styles.navLink}`}>Tehtud too</a>
+                            </li>
+                            <li onClick={removeActive}>
+                                <a href='#home' className={`${styles.navLink}`}>Firmast</a>
+                            </li>
+                            <li onClick={removeActive}>
+                                <a href='#home' className={`${styles.navLink}`}>Kontakt</a>
+                            </li>
+                        </ul>
+
+
+                        <div className={`${styles.hamburger} ${isActive ? styles.active : ''}`}  onClick={toggleActiveClass}>
+                            <span className={`${styles.bar}`}></span>
+                            <span className={`${styles.bar}`}></span>
+                            <span className={`${styles.bar}`}></span>
+                        </div>
+                    </div>
 
                     {/* logo */}
-                    <a href='#home' className={`${styles.logo}`}><img src={logo} alt=""/></a>
 
-
-                    <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
-                        <li onClick={removeActive}>
-                            <a href='#home' className={`${styles.navLink}`}>Home</a>
-                        </li>
-                        <li onClick={removeActive}>
-                            <a href='#home' className={`${styles.navLink}`}>Teenused</a>
-                        </li>
-                        <li onClick={removeActive}>
-                            <a href='#home' className={`${styles.navLink}`}>Tehtud too</a>
-                        </li>
-                        <li onClick={removeActive}>
-                            <a href='#home' className={`${styles.navLink}`}>Firmast</a>
-                        </li>
-                        <li onClick={removeActive}>
-                            <a href='#home' className={`${styles.navLink}`}>Kontakt</a>
-                        </li>
-                    </ul>
-
-
-                    <div className={`${styles.hamburger} ${isActive ? styles.active : ''}`}  onClick={toggleActiveClass}>
-                        <span className={`${styles.bar}`}></span>
-                        <span className={`${styles.bar}`}></span>
-                        <span className={`${styles.bar}`}></span>
-                    </div>
                 </nav>
 
 
