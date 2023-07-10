@@ -11,7 +11,7 @@ const Footer = () => {
                 <a href='#home' className="logo"><img src={logo} alt=""/></a>
                 <ul className="fast-links-list">
                     <li>
-                        <a href='#home' >Home</a>
+                        <a href='#home' >Esileht</a>
                     </li>
                     <li>
                         <a href='#home'>Teenused</a>
@@ -23,15 +23,17 @@ const Footer = () => {
                         <a href='#home' >Firmast</a>
                     </li>
                     <li>
+                        <a href='#home' >Meie tehnika</a>
+                    </li>
+                    <li>
                         <a href='#home' >Kontakt</a>
                     </li>
                 </ul>
 
                 <ul className="short-info">
-                    <li>Järvevana tee 5, 10112 Tallinn, Eesti</li>
-                    <li>Telefon +372 650 8800, Faks +372 650 8801</li>
-                    <li>Registrikood 10037062, KMKR EE100271878</li>
-                    <li>E-post info@maru.ee</li>
+                    <li>Männiku tee 102, Tallinn 11216</li>
+                    <li> Tel./Fax +372 650 3023, Mobiil +372 501 2509</li>
+                    <li> E-post: filsi@filsi.ee</li>
                 </ul>
 
             </div>

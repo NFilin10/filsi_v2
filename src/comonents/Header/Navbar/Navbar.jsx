@@ -36,7 +36,7 @@ function Navbar() {
 
                         <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
                             <li onClick={removeActive}>
-                                <a href='#home' className={`${styles.navLink}`}>Home</a>
+                                <a href='#home' className={`${styles.navLink}`}>Esileht</a>
                             </li>
                             <li onClick={removeActive}>
                                 <a href='#home' className={`${styles.navLink}`}>Teenused</a>
@@ -46,6 +46,9 @@ function Navbar() {
                             </li>
                             <li onClick={removeActive}>
                                 <a href='#home' className={`${styles.navLink}`}>Firmast</a>
+                            </li>
+                            <li onClick={removeActive}>
+                                <a href='#home' className={`${styles.navLink}`}>Meie tehnika</a>
                             </li>
                             <li onClick={removeActive}>
                                 <a href='#home' className={`${styles.navLink}`}>Kontakt</a>

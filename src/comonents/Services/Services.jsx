@@ -28,14 +28,14 @@ const Services = () => {
     };
 
     const serviceData = [
-        {id: 1, serviceName: "valisvorkude ehitus", serviceDescription: "Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I’m never giving up", serviceImg: service1},
-        {id: 2, serviceName: "valisvorkude ehitus", serviceDescription: "Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I’m never giving up", serviceImg: service2},
-        {id: 3, serviceName: "valisvorkude ehitus", serviceDescription: "Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I’m never giving up", serviceImg: service3},
-        {id: 4, serviceName: "valisvorkude ehitus", serviceDescription: "Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I’m never giving up", serviceImg: service4},
-        {id: 5, serviceName: "valisvorkude ehitus", serviceDescription: "Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I’m never giving up", serviceImg: service5},
-        {id: 6, serviceName: "valisvorkude ehitus", serviceDescription: "Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I’m never giving up", serviceImg: service6},
-        {id: 7, serviceName: "valisvorkude ehitus", serviceDescription: "Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I’m never giving up", serviceImg: service7},
-        {id: 8, serviceName: "valisvorkude ehitus", serviceDescription: "Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I’m never giving up", serviceImg: service8},
+        {id: 1, serviceName: "Välisvõrkude ehitus", serviceDescription: "See teenus hõlmab elektrivõrkude rajamist ja hooldust välitingimustes, tagades elektrienergia leviku piirkonnas või territooriumil.", serviceImg: service1},
+        {id: 2, serviceName: "Sisetööd", serviceDescription: "Selle teenusega tegeletakse elektrisüsteemide paigaldamise, remondi ja hooldusega hoonetes ja struktuurides, et tagada ohutu ja usaldusväärne elektrivarustus.", serviceImg: service2},
+        {id: 3, serviceName: "Kontaktvõrgu ehitus", serviceDescription: "See teenus hõlmab kontaktliinide või elektriliinide ehitamist, mille abil elektrienergia edastatakse ühendatud seadmetele ja klientidele.", serviceImg: service3},
+        {id: 4, serviceName: "Kaevetööd", serviceDescription: "Kaevetööd hõlmavad maapinna kaevamist ja töötlemist, et paigaldada elektrikaablid, torustikud või muud seadmed elektrivõrguga seotud projekte ja rajatisi vajavate tööde jaoks.", serviceImg: service4},
+        {id: 5, serviceName: "Alajaamade ehitus", serviceDescription: " See teenus hõlmab alajaamade rajamist, mis on olulised elektrivarustuse jaotamiseks ning energia muundamiseks ühendatud piirkondadele ja klientidele.", serviceImg: service5},
+        {id: 6, serviceName: "Käit", serviceDescription: "Käituteenus hõlmab elektrisüsteemide ja seadmete järelevalvet, hooldust, remonti ja optimeerimist, et tagada nende tõrgeteta toimimine ja pikaajaline usaldusväärsus.", serviceImg: service6},
+        {id: 7, serviceName: "Projekteerimine", serviceDescription: "Projekteerimisteenus hõlmab kohandatud elektrisüsteemide planeerimist ja kavandamist vastavalt klientide vajadustele, arvestades ohutuse, tõhususe ja energiasäästlikkuse põhimõtteid.", serviceImg: service7},
+        {id: 8, serviceName: "Ehitustööd", serviceDescription: "Ehitusteenus hõlmab elektriinfrastruktuuri ehitamist, sealhulgas elektrisüsteemide, kaablite, juhtmete ja muude seadmete paigaldamist vastavalt projektidele ja ehitusstandarditele.", serviceImg: service8},
     ]
 
     let serviceElements = serviceData.map(service =>

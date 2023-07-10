@@ -21,7 +21,6 @@ a {
     width: 100%;
     position: absolute;
     z-index: 2;
-    /*padding: 10px 120px;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,6 +33,7 @@ a {
     width: 1602px;
     display: flex;
     justify-content: space-between;
+
 }
 
 
@@ -56,6 +56,33 @@ a {
 .hamburger{
     display: none;
 }
+
+
+.navMenu li {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+
+.navMenu li:after {
+    background-color: #EDB820;
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    /*background-color: #0087ca;*/
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navMenu li:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 
 /* media queries */
 
@@ -127,6 +154,14 @@ a {
 
     .navLink{
         color: white;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1920px)  {
+    .nav_content{
+        margin-left: 90px;
+        margin-right: 90px;
     }
 
 }

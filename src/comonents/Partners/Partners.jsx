@@ -43,7 +43,7 @@ const Partners = () => {
         <div className="partners-wrapper">
             <div className="partners-content">
                 <div className="partners-heading">
-                    <h1>Our Partners</h1>
+                    <h1>Meie Partnerid</h1>
                 </div>
                 <div className="partners-list">
                     {partnersElements}

@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 import './Swiper.css';
 
 // import required modules
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
 
 export default function SwiperComp(props) {
 
@@ -22,35 +22,39 @@ export default function SwiperComp(props) {
                 pagination={true}
                 mousewheel={true}
                 keyboard={true}
-                modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+                autoplay={true}
+                modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
                 className="mySwiper"
             >
                 <SwiperSlide>
                     <img src={props.images.image1} alt=""/>
                     <div className="slider-info-wrapper">
-                        <h3 className="slider-text1">We are construction partners.</h3>
-                        <h1 className="slider-text2">The Builders We Are The Best</h1>
+                        <h3 className="slider-text1">Elektrifirma usaldusväärsed partnerid.</h3>
+                        <h1 className="slider-text2">Ehitajad, kes teevad parimat tööd</h1>
                         <div className="slider-btn-wrapper">
-                            <a className="slider-btn" href="#">Who we are</a>
+                            <a className="slider-btn" href="#">Kes me oleme</a>
                         </div>
-
                     </div>
 
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={props.images.image2} alt=""/>
                     <div className="slider-info-wrapper">
-                        <h3 className="slider-text1">We are construction partners.</h3>
-                        <h1 className="slider-text2">The Builders We Are The Best</h1>
-                        <a className="slider-btn" href="#">Who we are</a>
+                        <h3 className="slider-text1">Avasta võimsad elektrilahendused meie ettevõttega.</h3>
+                        <h1 className="slider-text2">Oleme ehitajad, kes loovad tuleviku</h1>
+                        <div className="slider-btn-wrapper">
+                            <a className="slider-btn" href="#">Kes me oleme</a>
+                        </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={props.images.image3} alt=""/>
                     <div className="slider-info-wrapper">
-                        <h3 className="slider-text1">We are construction partners.</h3>
-                        <h1 className="slider-text2">The Builders We Are The Best</h1>
-                        <a className="slider-btn" href="#">Who we are</a>
+                        <h3 className="slider-text1">Elektrifirma, mis pakub innovaatilisi lahendusi.</h3>
+                        <h1 className="slider-text2">Meie ehitajad toovad teie ideed ellu</h1>
+                        <div className="slider-btn-wrapper">
+                            <a className="slider-btn" href="#">Kes me oleme</a>
+                        </div>
                     </div>
                 </SwiperSlide>
             </Swiper>

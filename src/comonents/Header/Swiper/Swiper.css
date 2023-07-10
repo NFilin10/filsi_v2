@@ -68,6 +68,7 @@ body {
 }
 
 .slider-btn{
+    text-transform: uppercase;
     font-size: 13px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -85,11 +86,16 @@ body {
     display: flex;
     align-items: center;
     margin-top: 35px;
-    max-width: 153px;
-    max-height: 46px;
+    max-width: 183px;
+    max-height: 55px;
     border-radius: 3px;
     padding: 14px 25px 14px 25px;
     background-color: #EDB820;
+    transition: all 0s ease 0s;
+}
+
+.slider-btn-wrapper:hover{
+    background-color: #333333;
 }
 
 
