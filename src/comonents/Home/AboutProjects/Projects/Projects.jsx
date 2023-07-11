@@ -1,18 +1,13 @@
 import React from 'react'
 
-import s from './../../../assets/service7.png'
 
-import kakumaeSadam from './../../../assets/kakumaeSadam.jpg'
-import moduleTech from './../../../assets/moduleTech.jpg'
-import eestiTraat from './../../../assets/eestiTraat.jpg'
-import favor from './../../../assets/favor.jpg'
 
 import './Projects.css'
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-const Projects = () => {
+const Projects = (props) => {
 
     const responsive = {
         superLargeDesktop: {
@@ -34,6 +29,12 @@ const Projects = () => {
         }
     };
 
+    let projectElements = props.state.map(project =>
+        <div className="project">
+            <img className="service-img" src={project.img} alt=""/>
+            <div className="project-name">{project.name}</div>
+        </div>
+    )
 
     return (
         <div className="projects-wrapper">
@@ -53,24 +54,7 @@ const Projects = () => {
                 // dotListClass="custom-dot-list-style"
                 // itemClass="carousel-item-padding-40-px"
             >
-
-
-                <div className="project">
-                    <img className="service-img" src={kakumaeSadam} alt=""/>
-                    <div className="project-name">Kakumäe Sadam</div>
-                </div>
-                <div className="project">
-                    <img className="service-img" src={moduleTech} alt=""/>
-                    <div className="project-name">Module Tech</div>
-                </div>
-                <div className="project">
-                    <img className="service-img" src={eestiTraat} alt=""/>
-                    <div className="project-name">Eesti Traat</div>
-                </div>
-                <div className="project">
-                    <img className="service-img" src={favor} alt=""/>
-                    <div className="project-name">Favor</div>
-                </div>
+                {projectElements}
             </Carousel>
         </div>
     )

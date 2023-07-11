@@ -1,0 +1,6 @@
+
+
+.done-projects{
+    display: flex;
+    flex-direction: column;
+}

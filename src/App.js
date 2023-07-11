@@ -1,18 +1,21 @@
 import './App.css';
-import Navbar from "./comonents/Header/Header";
-import Services from './comonents/Services/Services'
-import AboutProjects from './comonents/AboutProjects/AbooutProjects'
-import Partners from './comonents/Partners/Partners'
+import Home from './comonents/Home/Home'
+import Projects from './comonents/Projects/Projects'
 import Footer from './comonents/Footer/Footer'
+import { Routes, Route } from 'react-router-dom';
 
-function App() {
-  return (
+
+
+function App(props) {
+    return (
     <div className="App">
-      <Navbar />
-        <Services />
-        <AboutProjects/>
-        <Partners/>
-      <Footer/>
+        <Routes>
+            <Route path="/" element={<Home state={props.state.home}/>} />
+
+            <Route path="/tehtud-projektid" element={<Projects state={props.state.home}/>} />
+        </Routes>
+        <Footer/>
+
     </div>
   );
 }
