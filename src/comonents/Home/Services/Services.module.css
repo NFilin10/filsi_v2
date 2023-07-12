@@ -1,46 +1,32 @@
 
 
-.alice-carousel{
-    z-index: 1;
-    top: -80px;
-    /*position: absolute;*/
-    max-width: 1170px !important;
-    height: 330px;
-    margin: 0 auto;
-}
 
-
-
-.alice-carousel__stage-item img{
-    max-width: 360px !important;
-    max-height: 255px !important;
-}
-
-.service-wrapper{
+.serviceWrapper{
     width: 360px !important;
 }
 
-.service-wrapper:hover .service-image::before{
+.serviceWrapper:hover .serviceImage::before{
     border: 3px solid #edb820;
 }
 
-.service-image{
+.serviceImage{
     width: 360px !important;
     height: 255px !important;
 }
 
-.service-image img{
+.serviceImage img{
     width: 360px !important;
     height: 255px !important;
 }
 
 
-.service-text{
+.serviceText{
     width: 360px;
     height: 190px;
 }
 
-.service-heading{
+
+.serviceHeading{
     margin-top: 37px;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -50,7 +36,7 @@
     margin-left: 25px;
 }
 
-.service-description{
+.serviceDescription{
     margin-top: 34px;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
@@ -60,7 +46,7 @@
     margin-left: 25px;
 }
 
-.service-num{
+.serviceNum{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: rgba(48, 48, 48, .1);
@@ -72,7 +58,7 @@
     font-size: 90px;
 }
 
-.service-image::before{
+.serviceImage::before{
     content: "";
     border: 3px solid #E5E5E5;
     z-index: -1;
@@ -90,7 +76,7 @@
         margin-top: 50px !important;
     }
 
-    .service-wrapper{
+    .serviceWrapper{
         width: 100% !important;
         display: flex;
         flex-direction: column;
@@ -98,7 +84,7 @@
         align-items: center;
     }
 
-    .service-image{
+    .serviceImage{
         width: 333px !important;
         height: 235px !important;
     }
@@ -110,12 +96,12 @@
 
     }
 
-    .service-image img{
+    .serviceImage img{
         width: 333px !important;
         height: 235px !important;
     }
 
-    .service-image::before{
+    .serviceImage::before{
         content: "";
         border: none;
         z-index: 0;

@@ -1,12 +1,12 @@
 import React from 'react'
 import About from './About/About'
-import './AboutProjects.css'
+import Styles from './AboutProjects.module.css'
 import Projects from './Projects/Projects'
 
 const AbooutProjects = (props) => {
     return (
-        <div className="about-projects-wrapper">
-            <div className="about-projects-content">
+        <div className={Styles.aboutProjectsWrapper}>
+            <div className={Styles.aboutProjectsContent}>
                 <About/>
                 <Projects state={props.state}/>
             </div>

@@ -1,5 +1,5 @@
-import './Services.css'
-
+import Styles from './Services.module.css'
+import './ServicesCarousel.css'
 
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
@@ -18,25 +18,29 @@ const Services = (props) => {
 
 
     let serviceElements = props.state.map(service =>
-        <div className="service-wrapper">
-            <div className="service-image">
+        <div className={Styles.serviceWrapper}>
+            <div className={Styles.serviceImage}>
                 <img src={service.serviceImg} onDragStart={handleDragStart} role="presentation" />
             </div>
-            <div className="service-text">
-                <span className="service-num">0{service.id}</span>
-                <h6 className="service-heading">{service.serviceName}</h6>
-                <p className="service-description">{service.serviceDescription}</p>
+            <div className={Styles.serviceText}>
+                <span className={Styles.serviceNum}>0{service.id}</span>
+                <h6 className={Styles.serviceHeading}>{service.serviceName}</h6>
+                <p className={Styles.serviceDescription}>{service.serviceDescription}</p>
             </div>
         </div>
     )
 
 
     return(
-        <AliceCarousel
-            mouseTracking items={serviceElements}
-            responsive={responsive}
-            controlsStrategy="alternate"
-        />
+
+            <AliceCarousel
+                mouseTracking items={serviceElements}
+                responsive={responsive}
+                controlsStrategy="alternate"
+
+            />
+
+
     );
 };
 

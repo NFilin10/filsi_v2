@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react'
-import  styles from './Navbar.module.css';
+import  Styles from './Navbar.module.css';
 import logo from '../../../../assets/logo.png'
 import { Link } from 'react-router-dom';
 
@@ -12,7 +12,7 @@ function Navbar(props) {
     const [showNavbar, setShowNavbar] = useState(true)
     const location = useLocation()
     useEffect(() => {
-        if (location.pathname === '/tehtud-projektid'){
+        if (location.pathname === '/tehtud-projektid' || location.pathname === '/teenused'){
             setShowNavbar(false)
         }
     }, [location])
@@ -39,38 +39,38 @@ function Navbar(props) {
     return (
 
 
-        <nav className={styles.navbar} style={{position: !showNavbar ? 'relative' : '', backgroundColor: !showNavbar ? '#242424' : '', border: !showNavbar ? 'none' : ''}}>
+        <nav className={Styles.navbar} style={{position: !showNavbar ? 'relative' : '', backgroundColor: !showNavbar ? '#242424' : '', }}>
 
-            <div className={styles.nav_content}>
-                <a href='#home' className={`${styles.logo}`}><img src={logo} alt=""/></a>
+            <div className={Styles.nav_content}>
+                <a href='/' className={`${Styles.logo}`}><img src={logo} alt=""/></a>
 
 
-                <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
+                <ul className={`${Styles.navMenu} ${isActive ? Styles.active : ''}`}>
                     <li onClick={removeActive}>
-                        <Link to='#home' className={`${styles.navLink}`}>Esileht</Link>
+                        <Link to='/' className={`${Styles.navLink}`}>Esileht</Link>
                     </li>
                     <li onClick={removeActive}>
-                        <Link to='/' className={`${styles.navLink}`}>Teenused</Link>
+                        <Link to='/teenused' className={`${Styles.navLink}`}>Teenused</Link>
                     </li>
                     <li onClick={removeActive}>
-                        <a href='/tehtud-projektid' className={`${styles.navLink}`}>Tehtud too</a>
+                        <Link to='/tehtud-projektid' className={`${Styles.navLink}`}>Tehtud too</Link>
                     </li>
                     <li onClick={removeActive}>
-                        <a href='#home' className={`${styles.navLink}`}>Firmast</a>
+                        <a href='#home' className={`${Styles.navLink}`}>Firmast</a>
                     </li>
                     <li onClick={removeActive}>
-                        <a href='#home' className={`${styles.navLink}`}>Meie tehnika</a>
+                        <a href='#home' className={`${Styles.navLink}`}>Meie tehnika</a>
                     </li>
                     <li onClick={removeActive}>
-                        <a href='#home' className={`${styles.navLink}`}>Kontakt</a>
+                        <a href='#home' className={`${Styles.navLink}`}>Kontakt</a>
                     </li>
                 </ul>
 
 
-                <div className={`${styles.hamburger} ${isActive ? styles.active : ''}`}  onClick={toggleActiveClass}>
-                    <span className={`${styles.bar}`}></span>
-                    <span className={`${styles.bar}`}></span>
-                    <span className={`${styles.bar}`}></span>
+                <div className={`${Styles.hamburger} ${isActive ? Styles.active : ''}`}  onClick={toggleActiveClass}>
+                    <span className={`${Styles.bar}`}></span>
+                    <span className={`${Styles.bar}`}></span>
+                    <span className={`${Styles.bar}`}></span>
                 </div>
             </div>
         </nav>

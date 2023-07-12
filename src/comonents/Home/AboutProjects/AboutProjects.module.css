@@ -1,11 +1,12 @@
-.about-projects-wrapper{
+.aboutProjectsWrapper{
     height: 1335.5px;
     background-color: #2D2D2D;
     position: relative;
+    margin-top: 210px;
 
 }
 
-.about-projects-wrapper::before{
+.aboutProjectsWrapper::before{
     margin-top: 90px;
     top: 25%;
     content: '';
@@ -19,7 +20,7 @@
 }
 
 
-.about-projects-content{
+.aboutProjectsContent{
     margin: 0 auto;
     max-width: 1603px;
     height: 100%;
@@ -27,7 +28,7 @@
 }
 
 @media screen and (max-width: 780px){
-    .about-projects-wrapper::before{
+    .aboutProjectsWrapper::before{
         margin-top: 0;
         top: 0;
         content: none;

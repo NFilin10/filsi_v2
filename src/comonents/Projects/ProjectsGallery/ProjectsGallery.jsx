@@ -1,26 +1,32 @@
 import React, {useEffect, useState} from 'react'
 
-import './ProjectsGallery.css'
-import kakumaeSadam from "../../../assets/kakumaeSadam.jpg";
+import Styles from './ProjectsGallery.module.css'
 import {useLocation} from "react-router-dom";
 
 const ProjectsGallery = (props) => {
 
-    const [imgSize, setImgSize] = useState(true)
-    const location = useLocation()
+    const location = useLocation();
+
+    // Check if the current URL matches the "/other" route
+    const projectPage = location.pathname === '/tehtud-projektid';
+
+    // Set the body background color based on the URL
     useEffect(() => {
-        if (location.pathname === '/tehtud-projektid'){
-            setImgSize(false)
-        }
-    }, [location])
+        document.body.style.backgroundColor = projectPage ? '#2d2d2d' : 'white';
+
+        // Clean up the effect when the component unmounts
+        return () => {
+            document.body.style.backgroundColor = '';
+        };
+    }, [projectPage]);
+
 
     const [noOfElement, setnoOfElement] = useState(3);
     const loadMore = () => {
-        console.log(noOfElement + noOfElement)
         if (noOfElement + noOfElement >= props.state.length) {
-            const btn = document.querySelector(".button-wrapper")
+            const btn = document.querySelector(`.${Styles.buttonWrapper}`)
             btn.style.display = "none"
-            const gallery = document.querySelector(".project-photos")
+            const gallery = document.querySelector(`.${Styles.projectPhotos}`)
             gallery.style.marginBottom = "120px"
 
         }
@@ -30,16 +36,16 @@ const ProjectsGallery = (props) => {
 
 
     let projectElements = slice.map(project =>
-        <div className="project">
-            <img className="service-img object-img"  src={project.img}  alt=""/>
-            <div className="project-name" >{project.name}</div>
+        <div className={Styles.project}>
+            <img className={Styles.serviceImg}  src={project.img}  alt=""/>
+            <div className={Styles.projectName}>{project.name}</div>
         </div>
     )
 
     return (
-        <div className="projects-gallery-container">
-            <div className="projects-gallery-content">
-                <div className="projects-heading">
+        <div className={Styles.projectsGalleryContainer}>
+            <div className={Styles.projectsGalleryContent}>
+                <div className={Styles.projectsHeading}>
                     <h1>
                         tehtud
                         <br/>
@@ -49,12 +55,12 @@ const ProjectsGallery = (props) => {
 
                 </div>
             </div>
-            <div className="project-photos-wrapper">
-                <div className="project-photos" >
+            <div className={Styles.projectPhotosWrapper}>
+                <div className={Styles.projectPhotos} >
                     {projectElements}
                 </div>
-                <div className="button-wrapper">
-                    <button className="all-projects-btn" onClick={() => loadMore()}>KUVA ROHKEM</button>
+                <div className={Styles.buttonWrapper}>
+                    <button className={Styles.allProjectsBtn} onClick={() => loadMore()}>KUVA ROHKEM</button>
                 </div>
             </div>
 

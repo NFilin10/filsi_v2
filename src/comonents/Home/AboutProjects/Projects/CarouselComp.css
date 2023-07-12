@@ -1,0 +1,8 @@
+.react-multi-carousel-list  {
+    margin-top: 62px;
+}
+
+.react-multi-carousel-item {
+    max-width: 540px !important;
+    max-height: 705px !important;
+}

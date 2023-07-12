@@ -1,8 +1,8 @@
 import React from 'react'
 
+import './CarouselComp.css'
 
-
-import './Projects.css'
+import Styles from './Projects.module.css'
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -30,15 +30,17 @@ const Projects = (props) => {
     };
 
     let projectElements = props.state.map(project =>
-        <div className="project">
-            <img className="service-img" src={project.img} alt=""/>
-            <div className="project-name">{project.name}</div>
+        <div className={Styles.project}>
+            <img className={Styles.projectImg} src={project.img} alt=""/>
+            <div className={Styles.projectName}>{project.name}</div>
         </div>
     )
 
+
+
     return (
-        <div className="projects-wrapper">
-            <h3 className="project-section-heading">Vaata, mida me oleme võimelised</h3>
+        <div className={Styles.projectsWrapper}>
+            <h3 className={Styles.projectSectionHeading}>Vaata, mida me oleme võimelised</h3>
             <Carousel
                 swipeable={true}
                 draggable={true}
@@ -52,7 +54,7 @@ const Projects = (props) => {
                 // transitionDuration={500}
                 // containerClass="carousel-container"
                 // dotListClass="custom-dot-list-style"
-                // itemClass="carousel-item-padding-40-px"
+                // itemClass="carousel-item-padding-400-px"
             >
                 {projectElements}
             </Carousel>

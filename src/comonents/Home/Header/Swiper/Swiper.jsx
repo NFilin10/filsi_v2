@@ -2,12 +2,14 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import Styles from './Swiper.module.css'
+
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import './Swiper.css';
+import './SwiperComp.css';
 
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
@@ -16,11 +18,11 @@ export default function SwiperComp(props) {
     let swiperElement = props.state.map(slide =>
         <SwiperSlide>
             <img src={slide.img} alt=""/>
-            <div className="slider-info-wrapper">
-                <h3 className="slider-text1">{slide.text1}</h3>
-                <h1 className="slider-text2">{slide.text2}</h1>
-                <div className="slider-btn-wrapper">
-                    <a className="slider-btn" href="#">{slide.btnText}</a>
+            <div className={Styles.sliderInfowWapper}>
+                <h3 className={Styles.sliderText1}>{slide.text1}</h3>
+                <h1 className={Styles.sliderText2}>{slide.text2}</h1>
+                <div className={Styles.sliderBtnWrapper}>
+                    <a className={Styles.sliderBtn} href="#">{slide.btnText}</a>
                 </div>
             </div>
 
@@ -30,6 +32,7 @@ export default function SwiperComp(props) {
     return (
         <>
             <Swiper
+
                 cssMode={true}
                 navigation={true}
                 pagination={true}

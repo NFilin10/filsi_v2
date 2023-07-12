@@ -6,17 +6,18 @@ import {React} from 'react'
 import Map from './Map/Map'
 
 
-import './Projects.css'
+import  Styles from './Projects.module.css'
 
 const Projects = (props) => {
 
     return (
 
-        <div className="done-projects">
+        <div className={Styles.doneProjects}>
 
             <Navbar/>
-            <Map/>
+
             <ProjectsGallery state={props.state[0].projects}/>
+            <Map/>
         </div>
 
 

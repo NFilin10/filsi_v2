@@ -6,7 +6,8 @@ import {MapContainer, TileLayer, Marker, Popup} from 'react-leaflet'
 
 import s from '../../../assets/moduleTech.jpg'
 
-import './Map.css'
+import Styles from'./Map.module.css'
+import './MapComp.css'
 
 const Map = () => {
 
@@ -60,7 +61,7 @@ const Map = () => {
                             <h1>{activeObject.ObjectName}</h1>
                             <p>Tellija: {activeObject.OrderComp}</p>
                             <p>Lõpetamise kuupäev: {activeObject.FinishDate}</p>
-                            <img src={s} alt=""/>
+                            <img className={Styles.mapCompImage} src={s} alt=""/>
                         </div>
                     </Popup>
                 )}

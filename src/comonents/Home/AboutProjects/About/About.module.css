@@ -1,11 +1,11 @@
-.about-content{
+.aboutContent{
     /*height: 455px;*/
     display: flex;
 
 }
 
 
-.heading-section{
+.headingSection{
     margin-top: 180px;
     height: 178px;
     width: 50%;
@@ -14,7 +14,7 @@
 }
 
 
-.heading-section h2{
+.headingSection h2{
     background-color: #2D2D2D;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -24,7 +24,7 @@
     margin-top: 30px;
 }
 
-.heading-section h6{
+.headingSection h6{
     font-size: 12px;
     line-height: 20.8px;
     background-color: #2D2D2D;
@@ -33,11 +33,11 @@
     color: white;
 }
 
-.heading-section h2 span{
+.headingSection h2 span{
     color: #0072A8;
 }
 
-.about-section{
+.aboutSection{
     width: 50%;
     height: 250px;
     background-color: #2D2D2D;
@@ -45,7 +45,7 @@
 
 }
 
-.about-section p {
+.aboutSection p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -55,12 +55,12 @@
 
 
 
-.about-section-content{
+.aboutSectionContent{
     margin-left: 110px;
     display: block;
 }
 
-.all-projects-btn{
+.allProjectsBtn{
     margin-top: 30px;
     cursor: pointer;
     background-color: transparent;
@@ -75,48 +75,48 @@
     transition: border-color 300ms ease-out, color 300ms ease-out;
 }
 
-.all-projects-btn:hover{
+.allProjectsBtn:hover{
     background-color: #0072A8;
 }
 
 
 @media screen and (max-width: 780px){
-    .heading-section h2{
+    .headingSection h2{
         font-size: 32px;
     }
 
-    .heading-section h6{
+    .headingSection h6{
         font-size: 13px;
     }
 
-    .about-section p {
+    .aboutSection p {
         font-size: 16px;
     }
 
-    .about-content{
+    .aboutContent{
         flex-direction: column;
     }
 
-    .heading-section{
+    .headingSection{
         width: 100%;
 
     }
 
-    .about-section{
+    .aboutSection{
         width: 100%;
 
         margin-top: 50px;
 
     }
 
-    .about-section-content{
+    .aboutSectionContent{
         margin-left: 0px;
     }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1920px)
 {
-    .about-content{
+    .aboutContent{
         margin-left: 90px;
         margin-right: 90px;
     }

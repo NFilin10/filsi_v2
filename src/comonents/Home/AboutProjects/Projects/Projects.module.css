@@ -1,10 +1,10 @@
-.projects-wrapper{
+.projectsWrapper{
     margin-top: 45px;
     position: relative;
-    max-width: 1604px;
+    max-width: 1624px;
 }
 
-.project-section-heading{
+.projectSectionHeading{
     text-transform: uppercase;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -17,18 +17,19 @@
 
 .project{
     cursor: pointer;
-    max-width: 540px;
+    width: inherit;
     max-height: 705px;
+
 }
 
-.service-img{
-    width: 540px;
+.projectImg{
+    width: inherit;
     height: 605px;
     -webkit-filter: brightness(100%);
 
 }
 
-.service-img:hover{
+.projectImg:hover{
     -webkit-filter: brightness(70%);
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
@@ -38,13 +39,20 @@
 }
 
 
-.service-img:hover + .project-name{
+.projectImg:hover + .projectName{
+    background-color: #0072A8;
+}
+
+.projectName:hover{
     background-color: #0072A8;
 }
 
 
-.project-name{
-    max-width: 540px;
+
+
+
+.projectName{
+    max-width: inherit;
     padding: 10px 40px;
     background-color: #242424;
     font-size: 15px;
@@ -59,15 +67,11 @@
     text-transform: uppercase;
 }
 
-.react-multi-carousel-list  {
-    margin-top: 62px;
-}
-
 
 
 @media only screen and (min-width: 1024px) and (max-width: 1920px)
 {
-    .projects-wrapper{
+    .projectsWrapper{
         margin-left: 90px;
         margin-right: 90px;
     }
