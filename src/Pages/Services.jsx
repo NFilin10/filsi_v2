@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from "../Home/Header/Navbar/Navbar";
-import ServicesContent from './ServicesContent/ServicesContent'
+import Navbar from "../comonents/Common/Navbar/Navbar";
+import ServicesContent from '../comonents/Services/ServicesContent/ServicesContent'
 
 const Services = (props) => {
 

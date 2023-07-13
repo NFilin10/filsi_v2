@@ -1,7 +1,7 @@
-import Header from "./Header/Header"
-import Services from './Services/Services'
-import AboutProjects from './AboutProjects/AbooutProjects'
-import Partners from './Partners/Partners'
+import Header from "../comonents/Home/Header/Header"
+import Services from '../comonents/Home/Services/Services'
+import AboutProjects from '../comonents/Home/AboutProjects/AbooutProjects'
+import Partners from '../comonents/Home/Partners/Partners'
 import {useLocation} from "react-router-dom";
 import React, {useEffect} from 'react'
 
@@ -24,7 +24,7 @@ function Home(props) {
     }, [isHomePage]);
 
     return (
-        <div className="App">
+        <div className="homeWrapper">
             <Header state={props.state[0].swiper}/>
             <Services  state={props.state[0].services}/>
             <AboutProjects state={props.state[0].projects}/>

@@ -1,6 +1,6 @@
 import React from 'react'
-import AboutContent from "./AboutContent/AboutContent";
-import Navbar from "../Home/Header/Navbar/Navbar";
+import AboutContent from "../comonents/About/AboutContent/AboutContent";
+import Navbar from "../comonents/Common/Navbar/Navbar";
 
 const About = () => {
     return(

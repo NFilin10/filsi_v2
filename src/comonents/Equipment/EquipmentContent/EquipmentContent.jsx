@@ -1,10 +1,11 @@
 import React, {useEffect} from 'react'
 import Popup from 'reactjs-popup';
 import Styles from "./EquipmentContent.module.css";
-import equipment from "../Equipment";
+import equipment from "../../../Pages/Equipment";
 import 'reactjs-popup/dist/index.css';
 import './PopupComp.css'
 import {useLocation} from "react-router-dom";
+import PageHeading from "../../Common/PageHeading/PageHeading";
 
 const EquipmentContent = (props) => {
 
@@ -62,15 +63,7 @@ const EquipmentContent = (props) => {
 
     return (
         <div className={Styles.equipmentsContainer}>
-            <div className={Styles.equipmentsHeading}>
-                <h1>
-                    meie
-                    <br/>
-                    teenused
-                </h1>
-                <p>Avaldage projektid, mis aitasid ehitada vastupanuvõimelisi ja usaldusväärseid ühendusi</p>
-
-            </div>
+            <PageHeading/>
             <div className={Styles.equipments}>
                 {equpmentElement}
             </div>

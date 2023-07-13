@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react'
 import Styles from './ProjectsGallery.module.css'
 import {useLocation} from "react-router-dom";
 import { Link } from 'react-router-dom';
+import PageHeading from "../../Common/PageHeading/PageHeading";
 
 
 const ProjectsGallery = (props) => {
@@ -50,15 +51,7 @@ const ProjectsGallery = (props) => {
     return (
         <div className={Styles.projectsGalleryContainer}>
             <div className={Styles.projectsGalleryContent}>
-                <div className={Styles.projectsHeading}>
-                    <h1>
-                        tehtud
-                        <br/>
-                        projektid
-                    </h1>
-                    <p>Avaldage projektid, mis aitasid ehitada vastupanuvõimelisi ja usaldusväärseid ühendusi</p>
-
-                </div>
+                <PageHeading/>
             </div>
             <div className={Styles.projectPhotosWrapper}>
                 <div className={Styles.projectPhotos} >

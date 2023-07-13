@@ -1,4 +1,4 @@
-import Navbar from "../../Home/Header/Navbar/Navbar";
+import Navbar from "../../Common/Navbar/Navbar";
 
 import {React, useState} from 'react'
 

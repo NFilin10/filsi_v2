@@ -136,9 +136,9 @@
     .projectsHeading p{
         font-size: 10px;
     }
-    .object-img{
-        max-height: 300px;
-        max-width: 300px;
+    .serviceImg{
+        max-height: 350px;
+        max-width: 350px ;
     }
 
     .projectPhotos{

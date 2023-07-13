@@ -3,6 +3,7 @@ import React, {useEffect} from 'react'
 
 import Styles from './ContactContent.module.css'
 import {useLocation} from "react-router-dom";
+import PageHeading from "../../Common/PageHeading/PageHeading";
 
 
 const ContactContent = (props) => {
@@ -39,13 +40,7 @@ const ContactContent = (props) => {
 
     return(
         <div className={Styles.contactsContainer}>
-            <div className={Styles.contactsHeading}>
-                <h1>
-                    meie
-                    <br/>
-                    kontaktid
-                </h1>
-            </div>
+           <PageHeading/>
             <div className={Styles.contactContent}>
                 {contactElement}
 

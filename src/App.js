@@ -1,14 +1,14 @@
 import './App.css';
-import Home from './comonents/Home/Home'
-import Projects from './comonents/Projects/Projects'
-import Footer from './comonents/Footer/Footer'
-import Services from './comonents/Services/Services'
-import Contact from './comonents/Contact/Contact'
-import Equipment from "./comonents/Equipment/Equipment";
-import SpecProject from "./comonents/SpecProject/SpecProject";
+import Home from './Pages/Home'
+import Projects from './Pages/Projects'
+import Footer from './comonents/Common/Footer/Footer'
+import Services from './Pages/Services'
+import Contact from './Pages/Contact'
+import Equipment from "./Pages/Equipment";
+import SpecProject from "./comonents/Common/SpecProject/SpecProject";
 import { Routes, Route } from 'react-router-dom';
-import About from "./comonents/About/About";
-import Navbar from "./comonents/Home/Header/Navbar/Navbar";
+import About from "./Pages/About";
+import Navbar from "./comonents/Common/Navbar/Navbar";
 import {React} from "react";
 
 
@@ -30,7 +30,6 @@ function App(props) {
             <Route path="/projektid/favor" element={<SpecProject id="3" state={props.state.home}/>} />
             <Route path="/meist" element={<About/>} />
         </Routes>
-        {/*<SpecProject/>*/}
         <Footer/>
 
     </div>

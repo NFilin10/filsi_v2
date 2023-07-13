@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import Styles from './ServicesContent.module.css'
 import {useLocation} from "react-router-dom";
-
+import PageHeading from "../../Common/PageHeading/PageHeading";
 
 const ServicesContent = (props) => {
 
@@ -41,15 +41,7 @@ const ServicesContent = (props) => {
     return(
 
         <div className={Styles.servicesContainer}>
-                <div className={Styles.servicesHeading}>
-                    <h1>
-                        meie
-                        <br/>
-                        teenused
-                    </h1>
-                    <p>Avaldage projektid, mis aitasid ehitada vastupanuvõimelisi ja usaldusväärseid ühendusi</p>
-
-                </div>
+            <PageHeading/>
             <div className={Styles.services}>
                 {servicesElement}
             </div>

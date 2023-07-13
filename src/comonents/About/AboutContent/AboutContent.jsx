@@ -1,18 +1,11 @@
 import React from 'react'
 import Styles from './AboutConent.module.css'
+import PageHeading from "../../Common/PageHeading/PageHeading";
 
 const AboutContent = () => {
     return(
         <div className={Styles.abouWrapper}>
-            <div className={Styles.servicesHeading}>
-                <h1>
-                    meie
-                    <br/>
-                    teenused
-                </h1>
-                <p>Avaldage projektid, mis aitasid ehitada vastupanuvõimelisi ja usaldusväärseid ühendusi</p>
-
-            </div>
+           <PageHeading/>
             <div className={Styles.aboutContent}>
                 <div className={Styles.textInfo}>
                     <h2>
