@@ -10,7 +10,6 @@ const Contact = (props) => {
     return(
 
         <div className={Styles.contactsWrapper}>
-            <Navbar/>
             <ContactContent state={props.state[0].contactInfo}/>
             <ContactForm/>
 

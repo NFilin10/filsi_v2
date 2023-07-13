@@ -13,9 +13,6 @@ const Projects = (props) => {
     return (
 
         <div className={Styles.doneProjects}>
-
-            <Navbar/>
-
             <ProjectsGallery state={props.state[0].projects}/>
             <Map/>
         </div>

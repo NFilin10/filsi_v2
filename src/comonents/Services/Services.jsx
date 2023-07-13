@@ -9,7 +9,6 @@ const Services = (props) => {
     return(
 
         <div>
-            <Navbar/>
             <ServicesContent state={props.state[0].services}/>
         </div>
     )

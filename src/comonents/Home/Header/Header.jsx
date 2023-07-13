@@ -12,7 +12,8 @@ const Header = (props) => {
     return (
         <header>
 
-                <Navbar/>
+            {/*<Navbar/>*/}
+
 
             <SwiperComp state={props.state}/>
         </header>

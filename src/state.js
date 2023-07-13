@@ -46,10 +46,10 @@ const state = {
             {id: 8, serviceName: "Ehitustööd", serviceDescription: "Ehitusteenus hõlmab elektriinfrastruktuuri ehitamist, sealhulgas elektrisüsteemide, kaablite, juhtmete ja muude seadmete paigaldamist vastavalt projektidele ja ehitusstandarditele.", serviceImg: service8,  shortDesc: ["Electrical", "Mechanical", "Plumbing"]},
         ],
         projects: [
-            {img: kakumaeSadam, name: "Kakumäe Sadam"},
-            {img: moduleTech, name: "Module Tech"},
-            {img: eestiTraat, name: "Eesti Traat"},
-            {img: favor, name: "Favor"},
+            {url: "kakumae-sadam", img: kakumaeSadam, name: "Kakumäe Sadam", client: "Maru", finishDate: "20.09.2022", location: "maardu", completedBy: "Filsi", projectDescription:"Sturgeon Electric has performed electrical work at DEN since 1991, when the firm was awarded the electrical services contract for the airport’s construction. Since then, we have worked regularly at DEN, including projects involving fire alarm system upgrades, underground primary distribution, street lighting, runway lighting, and the baggage system. Notable projects involve Jeppesen Terminal and Concourses A and C, and the Hotel and Transit Center at DEN, for which Sturgeon Electrical was the primary electrical contractor."},
+            {url: "module-tech", img: moduleTech, name: "Module Tech", client: "Maru", finishDate: "20.09.2022", location: "maardu", completedBy: "Filsi"},
+            {url: "eesti-traat", img: eestiTraat, name: "Eesti Traat", client: "Maru", finishDate: "20.09.2022", location: "maardu", completedBy: "Filsi"},
+            {url: "favor", img: favor, name: "Favor", client: "Maru", finishDate: "20.09.2022", location: "maardu", completedBy: "Filsi"},
 
         ],
         partners: [

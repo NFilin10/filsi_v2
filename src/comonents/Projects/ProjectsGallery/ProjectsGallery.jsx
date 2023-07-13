@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react'
 
 import Styles from './ProjectsGallery.module.css'
 import {useLocation} from "react-router-dom";
+import { Link } from 'react-router-dom';
+
 
 const ProjectsGallery = (props) => {
 
@@ -36,10 +38,13 @@ const ProjectsGallery = (props) => {
 
 
     let projectElements = slice.map(project =>
-        <div className={Styles.project}>
-            <img className={Styles.serviceImg}  src={project.img}  alt=""/>
-            <div className={Styles.projectName}>{project.name}</div>
-        </div>
+        <Link to={"/projektid/" + project.url}>
+            <div className={Styles.project}>
+                <img className={Styles.serviceImg}  src={project.img}  alt=""/>
+                <div className={Styles.projectName}>{project.name}</div>
+            </div>
+        </Link>
+
     )
 
     return (

@@ -12,8 +12,10 @@ function Navbar(props) {
     const [showNavbar, setShowNavbar] = useState(true)
     const location = useLocation()
     useEffect(() => {
-        if (location.pathname === '/tehtud-projektid' || location.pathname === '/teenused' || location.pathname === '/kontakt' ||  location.pathname === '/tehnika'){
+        if (location.pathname === '/tehtud-projektid' || location.pathname === '/teenused' || location.pathname === '/kontakt' ||  location.pathname === '/tehnika' || location.pathname === '/kakumae-sadam' || location.pathname === '/meist'){
             setShowNavbar(false)
+        } else {
+            setShowNavbar(true)
         }
     }, [location])
 
@@ -39,10 +41,10 @@ function Navbar(props) {
     return (
 
 
-        <nav className={Styles.navbar} style={{position: !showNavbar ? 'relative' : '', backgroundColor: !showNavbar ? '#242424' : '', }}>
+        <nav className={Styles.navbar} style={{position: !showNavbar ? 'relative' : '', backgroundColor: !showNavbar ? '#242424' : 'transparent', }}>
 
             <div className={Styles.nav_content}>
-                <a href='/' className={`${Styles.logo}`}><img src={logo} alt=""/></a>
+                <Link to='/' className={`${Styles.logo}`}><img src={logo} alt=""/></Link>
 
 
                 <ul className={`${Styles.navMenu} ${isActive ? Styles.active : ''}`}>
@@ -56,7 +58,7 @@ function Navbar(props) {
                         <Link to='/tehtud-projektid' className={`${Styles.navLink}`}>Tehtud too</Link>
                     </li>
                     <li onClick={removeActive}>
-                        <a href='#home' className={`${Styles.navLink}`}>Firmast</a>
+                        <Link to='/meist' className={`${Styles.navLink}`}>Firmast</Link>
                     </li>
                     <li onClick={removeActive}>
                         <Link to='/tehnika' className={`${Styles.navLink}`}>Meie tehnika</Link>
