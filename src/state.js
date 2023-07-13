@@ -49,7 +49,8 @@ const state = {
             {img: kakumaeSadam, name: "Kakumäe Sadam"},
             {img: moduleTech, name: "Module Tech"},
             {img: eestiTraat, name: "Eesti Traat"},
-            {img: favor, name: "Favor"}
+            {img: favor, name: "Favor"},
+
         ],
         partners: [
             {name:'WEG', logo: wegLogo},
@@ -65,6 +66,28 @@ const state = {
             {name:'Melker', logo: melkerLogo}
         ]
     }],
+    contact: [{contactInfo: [
+            {heading: "Our Location", midInfo: "350 Fifth Avenue, 34th floor New York", lowInfo: "NY 10118-3299 USA", icon: "https://themesflat.co/html/nah/images/icon/c1.png"},
+            {heading: "Contact us", midInfo: "Mobile: (+1) 800 555 888", lowInfo: "Fax: (+1) 800 666 999", icon: "https://themesflat.co/html/nah/images/icon/c1.png"},
+            {heading: "Write Some Words", midInfo: "Support24/7@domain.com", lowInfo: "Info@domain.com", icon: "https://themesflat.co/html/nah/images/icon/c1.png"},
+        ]
+    }],
+    equipment: [{equipmentInfo: [
+            {equipmentImg: "https://cdn6.regie-agricole.com/l92704190-1/john-deere-traktor-6215r.jpg", equipmentName: "Traktor", equipmentDesc: "Погрузчик JCB 930 с эксплуатационной массой 6340 кг приводится в действие двигателем JCB Dieselmax мощностью 55 кВт и обладает максимальной грузоподъемностью 3000 кг.\n" +
+                    "\n" +
+                    "На выбор доступно несколько вариантов грузоподъемных мачт с высотой подъема от 3,6 до 5,5 м.\n" +
+                    "\n" +
+                    "Помимо этого, механическая коробка передач JCB позволяет добиться быстрого и плавного переключения направления движения, а боковое смещение каретки дает возможность максимально точно позиционировать груз."},
+            {equipmentImg: "https://cdn6.regie-agricole.com/l92704190-1/john-deere-traktor-6215r.jpg", equipmentName: "Traktor", equipmentDesc: "lorefldskfldsk l;fklsd;fklsd;k l;fkdsl;k l;kfdls;k l;fkl;sdkfdsl kl;ds"},
+            {equipmentImg: "https://cdn6.regie-agricole.com/l92704190-1/john-deere-traktor-6215r.jpg", equipmentName: "Traktor", equipmentDesc: "lorefldskfldsk l;fklsd;fklsd;k l;fkdsl;k l;kfdls;k l;fkl;sdkfdsl kl;ds"},
+            {equipmentImg: "https://cdn6.regie-agricole.com/l92704190-1/john-deere-traktor-6215r.jpg", equipmentName: "Traktor", equipmentDesc: "lorefldskfldsk l;fklsd;fklsd;k l;fkdsl;k l;kfdls;k l;fkl;sdkfdsl kl;ds"},
+            {equipmentImg: "https://cdn6.regie-agricole.com/l92704190-1/john-deere-traktor-6215r.jpg", equipmentName: "Traktor", equipmentDesc: "lorefldskfldsk l;fklsd;fklsd;k l;fkdsl;k l;kfdls;k l;fkl;sdkfdsl kl;ds"},
+            {equipmentImg: "https://cdn6.regie-agricole.com/l92704190-1/john-deere-traktor-6215r.jpg", equipmentName: "Traktor", equipmentDesc: "lorefldskfldsk l;fklsd;fklsd;k l;fkdsl;k l;kfdls;k l;fkl;sdkfdsl kl;ds"},
+            {equipmentImg: "https://cdn6.regie-agricole.com/l92704190-1/john-deere-traktor-6215r.jpg", equipmentName: "Traktor", equipmentDesc: "lorefldskfldsk l;fklsd;fklsd;k l;fkdsl;k l;kfdls;k l;fkl;sdkfdsl kl;ds"},
+            {equipmentImg: "https://cdn6.regie-agricole.com/l92704190-1/john-deere-traktor-6215r.jpg", equipmentName: "Traktor", equipmentDesc: "lorefldskfldsk l;fklsd;fklsd;k l;fkdsl;k l;kfdls;k l;fkl;sdkfdsl kl;ds"}
+
+        ]
+    }]
 
 
 }

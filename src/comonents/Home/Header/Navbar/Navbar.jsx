@@ -12,7 +12,7 @@ function Navbar(props) {
     const [showNavbar, setShowNavbar] = useState(true)
     const location = useLocation()
     useEffect(() => {
-        if (location.pathname === '/tehtud-projektid' || location.pathname === '/teenused'){
+        if (location.pathname === '/tehtud-projektid' || location.pathname === '/teenused' || location.pathname === '/kontakt' ||  location.pathname === '/tehnika'){
             setShowNavbar(false)
         }
     }, [location])
@@ -59,10 +59,10 @@ function Navbar(props) {
                         <a href='#home' className={`${Styles.navLink}`}>Firmast</a>
                     </li>
                     <li onClick={removeActive}>
-                        <a href='#home' className={`${Styles.navLink}`}>Meie tehnika</a>
+                        <Link to='/tehnika' className={`${Styles.navLink}`}>Meie tehnika</Link>
                     </li>
                     <li onClick={removeActive}>
-                        <a href='#home' className={`${Styles.navLink}`}>Kontakt</a>
+                        <Link to='/kontakt' className={`${Styles.navLink}`}>Kontakt</Link>
                     </li>
                 </ul>
 

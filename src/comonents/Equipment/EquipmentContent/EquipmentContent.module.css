@@ -1,0 +1,167 @@
+
+.equipmentsContainer{
+    width: 100%;
+    background-color: #2D2D2D;
+
+
+}
+
+
+.equipmentsHeading{
+    max-width: 1300px;
+    text-transform: uppercase;
+    color: white;
+    padding: 75px 150px;
+    background-color: #242424;
+
+}
+
+
+
+
+.equipmentsHeading h1{
+    font-family: 'Bungee Outline', cursive;
+    font-size: 72px;
+    line-height: 80px;
+
+}
+
+.equipmentsHeading p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+
+.equipments{
+    margin: 80px auto;
+    /*margin-top: 60px;*/
+    max-width: 1602px;
+
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 80px;
+}
+
+
+
+.equipment{
+    /*width: 312px;*/
+    box-shadow: rgba(0, 114, 168, 0.3) 6px 8px 25px;
+
+
+}
+.equipmentImg{
+    height: 400px;
+    width: 502px;
+}
+
+.equipmentDescription{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -3px;
+    /*width: 312px;*/
+    height: 300px;
+    background-color: #242424 ;
+}
+
+.equipmentDescription{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    max-width: inherit;
+    padding: 10px 40px;
+    background-color: #242424;
+    font-size: 15px;
+    font-weight: 600;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    letter-spacing: .1em;
+
+}
+
+.equipmentDescription h3{
+
+    font-size: 25px;
+}
+
+
+.modal{
+    margin: 0;
+    padding: 0 !important;
+    width: 652px !important;
+}
+
+.content{
+    width: 652px !important;
+
+}
+
+.equipmentImgModal{
+    height: 450px;
+    width: 100%;
+}
+
+
+.equipmentDescriptionModal {
+    margin: 0 auto;
+    text-align: justify;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+    /*padding: 15px 35px 0 35px;*/
+
+}
+
+.equipmentDescriptionModal div{
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.equipmentDescriptionModal p{
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 780px){
+    .equipmentsHeading{
+        padding: 30px;
+        display: block;
+    }
+
+    .equipmentsHeading h1{
+        font-size: 30px;
+        line-height: 40px;
+
+    }
+
+    .equipmentsHeading p{
+        font-size: 10px;
+    }
+
+    .equipments{
+        justify-content: center;
+    }
+
+    .equipment{
+        width: 85%;
+    }
+
+    .equipmentImg{
+        width: 100%;
+    }
+
+
+
+}
+
