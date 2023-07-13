@@ -26,7 +26,7 @@ const ProjectsGallery = (props) => {
 
     const [noOfElement, setnoOfElement] = useState(3);
     const loadMore = () => {
-        if (noOfElement + noOfElement >= props.state.length) {
+        if (noOfElement + noOfElement >= props.state.projects.length) {
             const btn = document.querySelector(`.${Styles.buttonWrapper}`)
             btn.style.display = "none"
             const gallery = document.querySelector(`.${Styles.projectPhotos}`)
@@ -35,7 +35,7 @@ const ProjectsGallery = (props) => {
         }
         setnoOfElement(noOfElement + noOfElement)
     }
-    const slice = props.state.slice(0, noOfElement)
+    const slice = props.state.projects.slice(0, noOfElement)
 
 
     let projectElements = slice.map(project =>
@@ -51,7 +51,7 @@ const ProjectsGallery = (props) => {
     return (
         <div className={Styles.projectsGalleryContainer}>
             <div className={Styles.projectsGalleryContent}>
-                <PageHeading/>
+                <PageHeading state={props.state.pageInfoProjects[0]}/>
             </div>
             <div className={Styles.projectPhotosWrapper}>
                 <div className={Styles.projectPhotos} >

@@ -9,7 +9,7 @@ const Services = (props) => {
     return(
 
         <div>
-            <ServicesContent state={props.state[0].services}/>
+            <ServicesContent state={props.state[0]}/>
         </div>
     )
 }

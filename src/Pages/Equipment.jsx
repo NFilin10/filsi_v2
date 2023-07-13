@@ -4,7 +4,7 @@ import EquipmentContent from "../comonents/Equipment/EquipmentContent/EquipmentC
 const Equipment = (props) => {
     return(
         <div>
-            <EquipmentContent state={props.state[0].equipmentInfo}/>
+            <EquipmentContent state={props.state[0]}/>
         </div>
     )
 }

@@ -9,7 +9,7 @@ const Contact = (props) => {
     return(
 
         <div>
-            <ContactContent state={props.state[0].contactInfo}/>
+            <ContactContent state={props.state[0]}/>
             <ContactForm/>
 
         </div>

@@ -24,7 +24,7 @@ const ContactContent = (props) => {
     }, [contactPage]);
 
 
-    let contactElement = props.state.map(contact =>
+    let contactElement = props.state.contactInfo.map(contact =>
             <div className={Styles.contactAddress}>
                 <div className={Styles.imageWrapper}>
                     <img src={contact.icon} alt=""/>
@@ -40,7 +40,7 @@ const ContactContent = (props) => {
 
     return(
         <div className={Styles.contactsContainer}>
-           <PageHeading/>
+           <PageHeading state={props.state.pageInfoContact[0]}/>
             <div className={Styles.contactContent}>
                 {contactElement}
 

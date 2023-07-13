@@ -22,8 +22,10 @@
 
 }
 
+
 .projectImg{
-    width: inherit;
+    display: block;
+    width: 100%;
     height: 605px;
     -webkit-filter: brightness(100%);
 

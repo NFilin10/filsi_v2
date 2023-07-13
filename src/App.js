@@ -28,7 +28,7 @@ function App(props) {
             <Route path="/projektid/module-tech" element={<SpecProject id="1" state={props.state.home}/>} />
             <Route path="/projektid/eesti-traat" element={<SpecProject id="2" state={props.state.home}/>} />
             <Route path="/projektid/favor" element={<SpecProject id="3" state={props.state.home}/>} />
-            <Route path="/meist" element={<About/>} />
+            <Route path="/meist" element={<About state={props.state.about}/>} />
         </Routes>
         <Footer/>
 

@@ -91,7 +91,7 @@ a {
     .navbar{
         position: relative;
         min-height: 67px;
-        background-color: #666666;
+        background-color: #666666 !important;
         padding: 10px 20px;
         display: flex;
         justify-content: space-between;

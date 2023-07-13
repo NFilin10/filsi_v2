@@ -2,10 +2,10 @@ import React from 'react'
 import Styles from './AboutConent.module.css'
 import PageHeading from "../../Common/PageHeading/PageHeading";
 
-const AboutContent = () => {
+const AboutContent = (props) => {
     return(
         <div className={Styles.abouWrapper}>
-           <PageHeading/>
+           <PageHeading state={props.state.pageInfoAbout[0]}/>
             <div className={Styles.aboutContent}>
                 <div className={Styles.textInfo}>
                     <h2>

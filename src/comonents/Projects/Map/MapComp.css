@@ -1,6 +1,7 @@
 .leaflet-container {
     margin: 0 auto 120px;
-    max-width: 1700px;
+    max-width: 1500px;
+
     height: 800px;
 
 }

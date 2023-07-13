@@ -11,7 +11,7 @@ const Projects = (props) => {
     return (
 
         <div>
-            <ProjectsGallery state={props.state[0].projects}/>
+            <ProjectsGallery state={props.state[0]}/>
             <Map/>
         </div>
 

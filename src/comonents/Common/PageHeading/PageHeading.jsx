@@ -2,16 +2,16 @@ import React from 'react'
 import  "./PageHeading.css";
 
 
-const PageHeading = () => {
+const PageHeading = (props) => {
     return(
         <div className="pageHeadingContent">
             <div className="pageHeading">
                 <h1>
-                    tehtud
+                    {props.state.upperHeading}
                     <br/>
-                    projektid
+                    {props.state.lowerHeading}
                 </h1>
-                <p>Avaldage projektid, mis aitasid ehitada vastupanuvõimelisi ja usaldusväärseid ühendusi</p>
+                <p>{props.state.supHeading}</p>
             </div>
         </div>
 

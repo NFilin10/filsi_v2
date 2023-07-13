@@ -22,7 +22,7 @@ const ServicesContent = (props) => {
     }, [servicePage]);
 
 
-    let servicesElement = props.state.map(service =>
+    let servicesElement = props.state.services.map(service =>
 
         <div className={Styles.service}>
             <img className={Styles.serviceImg} src={service.serviceImg} alt=""/>
@@ -41,7 +41,7 @@ const ServicesContent = (props) => {
     return(
 
         <div className={Styles.servicesContainer}>
-            <PageHeading/>
+            <PageHeading state={props.state.pageInfoServices[0]}/>
             <div className={Styles.services}>
                 {servicesElement}
             </div>

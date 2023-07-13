@@ -2,10 +2,10 @@ import React from 'react'
 import AboutContent from "../comonents/About/AboutContent/AboutContent";
 import Navbar from "../comonents/Common/Navbar/Navbar";
 
-const About = () => {
+const About = (props) => {
     return(
         <div>
-           <AboutContent/>
+           <AboutContent state={props.state[0]}/>
         </div>
     )
 }

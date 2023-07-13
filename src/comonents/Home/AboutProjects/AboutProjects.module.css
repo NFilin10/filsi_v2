@@ -21,10 +21,9 @@
 
 
 .aboutProjectsContent{
-    margin: 0 auto;
+    margin: 180.5px auto;
     max-width: 1603px;
     height: 100%;
-    margin-top: 180.5px;
 }
 
 @media screen and (max-width: 780px){

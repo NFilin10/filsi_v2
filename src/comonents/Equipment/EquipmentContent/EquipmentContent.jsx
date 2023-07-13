@@ -26,7 +26,7 @@ const EquipmentContent = (props) => {
     }, [equipmentPage]);
 
 
-    let equpmentElement = props.state.map(equipment =>
+    let equpmentElement = props.state.equipmentInfo.map(equipment =>
 
 
         <Popup trigger=
@@ -63,7 +63,7 @@ const EquipmentContent = (props) => {
 
     return (
         <div className={Styles.equipmentsContainer}>
-            <PageHeading/>
+            <PageHeading state={props.state.pageInfoEquipment[0]}/>
             <div className={Styles.equipments}>
                 {equpmentElement}
             </div>
