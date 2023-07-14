@@ -15,6 +15,7 @@ import {React} from "react";
 
 
 function App(props) {
+    const projectUrls = props.state.home[0].projects
     return (
     <div className="App">
         <Navbar/>
@@ -25,10 +26,7 @@ function App(props) {
                 <Route path="/projektid" element={<Projects state={props.state.home}/>} />
                 <Route path="/kontakt" element={<Contact state={props.state.contact}/>} />
                 <Route path="/tehnika" element={<Equipment state={props.state.equipment}/>} />
-                <Route path="/projektid/kakumae-sadam" element={<SpecProject id="0" state={props.state.home}/>} />
-                <Route path="/projektid/module-tech" element={<SpecProject id="1" state={props.state.home}/>} />
-                <Route path="/projektid/eesti-traat" element={<SpecProject id="2" state={props.state.home}/>} />
-                <Route path="/projektid/favor" element={<SpecProject id="3" state={props.state.home}/>} />
+                <Route path="/projektid/:id" element={<SpecProject state={props.state.home[0].projects}/>} />
                 <Route path="/meist" element={<About state={props.state.about}/>} />
             </Routes>
         </ScrollTop>

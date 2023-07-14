@@ -125,6 +125,7 @@ const state = {
         ],
         projects: [
             {
+                id: 0,
                 url: "kakumae-sadam",
                 img: kakumaeSadam,
                 name: "Kakumäe Sadam",
@@ -134,6 +135,7 @@ const state = {
                 projectDescription: "Sturgeon Electric has performed electrical work at DEN since 1991, when the firm was awarded the electrical services contract for the airport’s construction. Since then, we have worked regularly at DEN, including projects involving fire alarm system upgrades, underground primary distribution, street lighting, runway lighting, and the baggage system. Notable projects involve Jeppesen Terminal and Concourses A and C, and the Hotel and Transit Center at DEN, for which Sturgeon Electrical was the primary electrical contractor."
             },
             {
+                id: 1,
                 url: "module-tech",
                 img: moduleTech,
                 name: "Module Tech",
@@ -142,6 +144,7 @@ const state = {
                 completedBy: "Filsi"
             },
             {
+                id: 2,
                 url: "eesti-traat",
                 img: eestiTraat,
                 name: "Eesti Traat",
@@ -150,6 +153,7 @@ const state = {
                 completedBy: "Filsi"
             },
             {
+                id: 3,
                 url: "favor",
                 img: favor,
                 name: "Favor",
@@ -158,6 +162,7 @@ const state = {
                 completedBy: "Filsi"
             },
             {
+                id: 4,
                 url: "r13",
                 img: r13,
                 name: "Lao ja büroohoone",
