@@ -40,7 +40,7 @@ const EquipmentContent = (props) => {
             {
                 close => (
                     <div className={Styles.modal}>
-                        <div className='content'>
+                        <div className={Styles.content}>
                             <img className={Styles.equipmentImgModal} src={equipment.equipmentImg} alt=""/>
                             <div className={Styles.equipmentDescriptionModal}>
                                 <div>{equipment.equipmentName}</div>

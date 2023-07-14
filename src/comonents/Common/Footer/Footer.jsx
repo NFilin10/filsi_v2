@@ -2,31 +2,32 @@ import React from 'react'
 
 import './Footer.css'
 import logo from "../../../assets/logo.png";
+import {Link} from "react-router-dom";
 
 
 const Footer = () => {
     return (
         <footer className="footer-wrapper">
             <div className="footer-content">
-                <a href='#home' className="logo"><img src={logo} alt=""/></a>
+                <Link to='/' className="logo"><img src={logo} alt=""/></Link>
                 <ul className="fast-links-list">
                     <li>
-                        <a href='#home' >Esileht</a>
+                        <Link to='/' >Esileht</Link>
                     </li>
                     <li>
-                        <a href='#home'>Teenused</a>
+                        <Link to='/teenused'>Teenused</Link>
                     </li>
                     <li>
-                        <a href='#home' >Tehtud too</a>
+                        <Link to='/projektid' >Tehtud too</Link>
                     </li>
                     <li>
-                        <a href='#home' >Firmast</a>
+                        <Link to='/meist' >Firmast</Link>
                     </li>
                     <li>
-                        <a href='#home' >Meie tehnika</a>
+                        <Link to='/tehnika' >Meie tehnika</Link>
                     </li>
                     <li>
-                        <a href='#home' >Kontakt</a>
+                        <Link to='/kontakt' >Kontakt</Link>
                     </li>
                 </ul>
 

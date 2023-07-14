@@ -1,6 +1,7 @@
 import React from 'react'
 import Styles from './AboutConent.module.css'
 import PageHeading from "../../Common/PageHeading/PageHeading";
+import aboutImg from "../../../assets/aboutImg.jpg"
 
 const AboutContent = (props) => {
     return(
@@ -9,14 +10,16 @@ const AboutContent = (props) => {
             <div className={Styles.aboutContent}>
                 <div className={Styles.textInfo}>
                     <h2>
-                        A RECOGNIZED LEADER IN ELECTRICAL CONSTRUCTION
+                        ELEKTRIEHITUSE TUNNUSTATUD LIIDER
                     </h2>
                     <p>
-                        An industry leader for more than 130 years, MYR Group has helped shape our nation’s infrastructure by delivering some of the largest and most complex electrical transmission, commercial and industrial, and renewable energy projects. Our specialized expertise, skilled workforce, and innovative practices translate to successful project delivery for our clients. Through these efforts we’re supporting the clean energy transformation.
+                        Filsi OÜ on Eesti elektrifirma, mis asutati 1997. aastal. Ettevõte spetsialiseerub elektrimontaažitöödele ning pakub mitmesuguseid teenuseid. Nende teenuste hulka kuuluvad välisvõrkude ehitus, sisetööd, kontaktvõrgu ehitus, kaevetööd, alajaamade ehitus, käit, projekteerimine ja ehitustööd. Filsi OÜ-l on muljetavaldav tehnika park, mis hõlmab suurt hulka ehitustehnikat.
+                        Firma on läbi viinud mitmeid märkimisväärseid projekte, sealhulgas Kakumäe Sadam, Module Tech, Eesti Traat ja Favor. Need suurprojektid on aidanud Filsi OÜ-l tugevdada oma mainet ja kogemust elektrimontaaži valdkonnas.
+                        Filsi OÜ on tuntud oma professionaalse ja usaldusväärse teeninduse poolest ning neil on kogenud meeskond, kes suudab kvaliteetselt täita erinevaid elektritööde projekte. Ettevõtte eesmärk on pakkuda klientidele parimat võimalikku lahendust nende elektrivajaduste rahuldamiseks ning tagada elektrisüsteemide ohutus ja usaldusväärsus.
                     </p>
                 </div>
                 <div className={Styles.img}>
-                    <img src="https://myrgroup.com/wp-content/uploads/2021/11/Leader-In-Construction-Anetelope-Juniper-2.jpg" alt=""/>
+                    <img src={aboutImg} alt=""/>
                 </div>
             </div>
         </div>

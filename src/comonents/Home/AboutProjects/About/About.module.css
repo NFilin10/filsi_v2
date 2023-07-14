@@ -99,12 +99,16 @@
 
     .headingSection{
         width: 100%;
+        margin-top: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
 
     }
 
     .aboutSection{
         width: 100%;
-
+        padding-left: 15px;
+        padding-right: 15px;
         margin-top: 50px;
 
     }

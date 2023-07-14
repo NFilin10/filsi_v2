@@ -13,6 +13,7 @@
 
 
 .pageHeading p{
+    margin-top: 17px;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     text-transform: uppercase;
@@ -38,6 +39,11 @@
 
     .pageHeading p{
         font-size: 10px;
+    }
+
+    .pageHeadingContent{
+        height: 170px;
+
     }
 
 }

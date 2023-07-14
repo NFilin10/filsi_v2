@@ -7,30 +7,6 @@
 }
 
 
-.equipmentsHeading{
-    max-width: 1300px;
-    text-transform: uppercase;
-    color: white;
-    padding: 75px 150px;
-    background-color: #242424;
-
-}
-
-
-
-
-.equipmentsHeading h1{
-    font-family: 'Bungee Outline', cursive;
-    font-size: 72px;
-    line-height: 80px;
-
-}
-
-.equipmentsHeading p{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-}
 
 
 
@@ -92,7 +68,7 @@
 .modal{
     margin: 0;
     padding: 0 !important;
-    width: 652px !important;
+    max-width: 652px !important;
 }
 
 .content{
@@ -124,7 +100,6 @@
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 20px;
-
 }
 
 .equipmentDescriptionModal p{
@@ -132,6 +107,8 @@
     line-height: 1.6;
     margin-bottom: 20px;
 }
+
+
 
 @media screen and (max-width: 780px){
     .equipmentsHeading{
@@ -150,6 +127,7 @@
     }
 
     .equipments{
+        margin-top: 30px;
         justify-content: center;
     }
 
@@ -157,11 +135,31 @@
         width: 85%;
     }
 
-    .equipmentImg{
+    .equipmentImg, .equipmentImgModal{
         width: 100%;
+        height: 250px;
     }
 
+    .content{
+        width: 302px !important;
 
+    }
+
+    .equipmentDescriptionModal p{
+        font-size: 10px;
+    }
 
 }
 
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px){
+    .equipments{
+        max-width: 1300px;
+    }
+
+    .equipmentImg{
+        height: 400px;
+        width: 402px;
+    }
+}

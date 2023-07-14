@@ -32,7 +32,7 @@ const ContactContent = (props) => {
                 <div className={Styles.details}>
                     <h5>{contact.heading}</h5>
                     <p>{contact.midInfo}</p>
-                    <p>{contact.lowInfo}</p>
+                    <p className={Styles[contact.className]}>{contact.lowInfo}</p>
                 </div>
             </div>
     )

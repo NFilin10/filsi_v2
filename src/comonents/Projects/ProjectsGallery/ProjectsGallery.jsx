@@ -11,7 +11,7 @@ const ProjectsGallery = (props) => {
     const location = useLocation();
 
     // Check if the current URL matches the "/other" route
-    const projectPage = location.pathname === '/tehtud-projektid';
+    const projectPage = location.pathname === '/projektid';
 
     // Set the body background color based on the URL
     useEffect(() => {

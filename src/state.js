@@ -14,6 +14,7 @@ import moduleTech from './assets/moduleTech.jpg'
 import eestiTraat from './assets/eestiTraat.jpg'
 import favor from './assets/favor.jpg'
 import wegLogo from "./assets/wegLogo.png";
+import combiconLogo from "./assets/combiconLogo.png"
 import maruLogo from "./assets/maruLogo.png";
 import evrLogo from "./assets/evrLogo.png";
 import lwLogo from "./assets/lwLogo.png";
@@ -24,7 +25,16 @@ import esbLogo from "./assets/esbLogo.png";
 import harjuLogo from "./assets/harjuLogo.png";
 import stokkerLogo from "./assets/stokkerLogo.png";
 import melkerLogo from "./assets/melkerLogo.png";
-import projectsGallery from "./comonents/Projects/ProjectsGallery/ProjectsGallery";
+import contactIcon from "./assets/contactIcon.png"
+import locationIcon from "./assets/locationIcon.png"
+import emailIcon from "./assets/emailIcon.png"
+import jcb4x from "./assets/jcb4vx.jpg"
+import yanmar_vio80 from "./assets/yanmar_vio80.jpg"
+import yanmar_vio23 from "./assets/yanmar_vio23.jpg"
+import yanmar_svo8 from "./assets/yanmar_svo8.jfif"
+import bobcat_s175 from "./assets/bobcat_s175.jpg"
+import bobcat_e16 from "./assets/bobcat_e16.jpg"
+import r13 from "./assets/r13.jpeg"
 
 
 const state = {
@@ -55,56 +65,56 @@ const state = {
                 serviceName: "Välisvõrkude ehitus",
                 serviceDescription: "See teenus hõlmab elektrivõrkude rajamist ja hooldust välitingimustes, tagades elektrienergia leviku piirkonnas või territooriumil.",
                 serviceImg: service1,
-                shortDesc: ["Electrical", "Mechanical", "Plumbing"]
+                shortDesc: ["Mastide ja postide paigaldus", "Kaablite paigaldus", "Maa-alune kaablite paigaldus", "Välisvõrkude hooldus ja remont"]
             },
             {
                 id: 2,
                 serviceName: "Sisetööd",
                 serviceDescription: "Selle teenusega tegeletakse elektrisüsteemide paigaldamise, remondi ja hooldusega hoonetes ja struktuurides, et tagada ohutu ja usaldusväärne elektrivarustus.",
                 serviceImg: service2,
-                shortDesc: ["Electrical", "Mechanical", "Plumbing"]
+                shortDesc: ["Elektrijuhtmestiku paigaldus", "Valgustussüsteemide paigaldus", "Pistikupesade ja lülitite paigaldus", "Elektrisüsteemide auditeerimine ja hooldus"]
             },
             {
                 id: 3,
                 serviceName: "Kontaktvõrgu ehitus",
                 serviceDescription: "See teenus hõlmab kontaktliinide või elektriliinide ehitamist, mille abil elektrienergia edastatakse ühendatud seadmetele ja klientidele.",
                 serviceImg: service3,
-                shortDesc: ["Electrical", "Mechanical", "Plumbing"]
+                shortDesc: ["Kontaktliinide paigaldus", "Isolatsioonimaterjalide kinnitamine", "Kontaktliinide hooldus ja remont"]
             },
             {
                 id: 4,
                 serviceName: "Kaevetööd",
                 serviceDescription: "Kaevetööd hõlmavad maapinna kaevamist ja töötlemist, et paigaldada elektrikaablid, torustikud või muud seadmed elektrivõrguga seotud projekte ja rajatisi vajavate tööde jaoks.",
                 serviceImg: service4,
-                shortDesc: ["Electrical", "Mechanical", "Plumbing"]
+                shortDesc: ["Kaeviku kaevamine kaablite paigaldamiseks", "Kaeviku täitmine pärast kaablite paigaldust", "Kaablikaitse torude paigaldus", "Side- ja elektrikaablite markeerimine"]
             },
             {
                 id: 5,
                 serviceName: "Alajaamade ehitus",
                 serviceDescription: " See teenus hõlmab alajaamade rajamist, mis on olulised elektrivarustuse jaotamiseks ning energia muundamiseks ühendatud piirkondadele ja klientidele.",
                 serviceImg: service5,
-                shortDesc: ["Electrical", "Mechanical", "Plumbing"]
+                shortDesc: ["Kaablite ühendamine alajaama", "Alajaama testimine ja seadistamine", "Alajaama turvalisuse tagamine"]
             },
             {
                 id: 6,
                 serviceName: "Käit",
                 serviceDescription: "Käituteenus hõlmab elektrisüsteemide ja seadmete järelevalvet, hooldust, remonti ja optimeerimist, et tagada nende tõrgeteta toimimine ja pikaajaline usaldusväärsus.",
                 serviceImg: service6,
-                shortDesc: ["Electrical", "Mechanical", "Plumbing"]
+                shortDesc: ["Elektrisüsteemide jälgimine ja hooldus", "Rikete ja häirete käsitlemine", "Plumbing"]
             },
             {
                 id: 7,
                 serviceName: "Projekteerimine",
                 serviceDescription: "Projekteerimisteenus hõlmab kohandatud elektrisüsteemide planeerimist ja kavandamist vastavalt klientide vajadustele, arvestades ohutuse, tõhususe ja energiasäästlikkuse põhimõtteid.",
                 serviceImg: service7,
-                shortDesc: ["Electrical", "Mechanical", "Plumbing"]
+                shortDesc: ["Elektrisüsteemi kavandamine ja projekteerimine", "Tehniliste jooniste ja dokumentatsiooni loomine", "Seadmete ja komponentide valik vastavalt projektinõuetele"]
             },
             {
                 id: 8,
                 serviceName: "Ehitustööd",
                 serviceDescription: "Ehitusteenus hõlmab elektriinfrastruktuuri ehitamist, sealhulgas elektrisüsteemide, kaablite, juhtmete ja muude seadmete paigaldamist vastavalt projektidele ja ehitusstandarditele.",
                 serviceImg: service8,
-                shortDesc: ["Electrical", "Mechanical", "Plumbing"]
+                shortDesc: ["Elektrisüsteemide paigaldus vastavalt projektile", "Ühenduste kontrollimine ja testimine", "Ehitusplatsi ettevalmistamine"]
             },
         ],
         pageInfoServices: [
@@ -118,8 +128,7 @@ const state = {
                 url: "kakumae-sadam",
                 img: kakumaeSadam,
                 name: "Kakumäe Sadam",
-                client: "Maru",
-                finishDate: "20.09.2022",
+                finishDate: "06.2019",
                 location: "maardu",
                 completedBy: "Filsi",
                 projectDescription: "Sturgeon Electric has performed electrical work at DEN since 1991, when the firm was awarded the electrical services contract for the airport’s construction. Since then, we have worked regularly at DEN, including projects involving fire alarm system upgrades, underground primary distribution, street lighting, runway lighting, and the baggage system. Notable projects involve Jeppesen Terminal and Concourses A and C, and the Hotel and Transit Center at DEN, for which Sturgeon Electrical was the primary electrical contractor."
@@ -128,8 +137,7 @@ const state = {
                 url: "module-tech",
                 img: moduleTech,
                 name: "Module Tech",
-                client: "Maru",
-                finishDate: "20.09.2022",
+                finishDate: "10.2019 ja 03.2021",
                 location: "maardu",
                 completedBy: "Filsi"
             },
@@ -137,8 +145,7 @@ const state = {
                 url: "eesti-traat",
                 img: eestiTraat,
                 name: "Eesti Traat",
-                client: "Maru",
-                finishDate: "20.09.2022",
+                finishDate: "06.2018",
                 location: "maardu",
                 completedBy: "Filsi"
             },
@@ -146,11 +153,37 @@ const state = {
                 url: "favor",
                 img: favor,
                 name: "Favor",
-                client: "Maru",
-                finishDate: "20.09.2022",
+                finishDate: "05.2023",
                 location: "maardu",
                 completedBy: "Filsi"
             },
+            {
+                url: "r13",
+                img: r13,
+                name: "Lao ja büroohoone",
+                client: "Maru",
+                finishDate: "09.2022",
+                location: "maardu",
+                completedBy: "Filsi"
+            },
+            // {
+            //     url: "kokasauna1",
+            //     img: "",
+            //     name: "Lao ja büroohoone",
+            //     client: "Maru",
+            //     finishDate: "20.09.2022",
+            //     location: "maardu",
+            //     completedBy: "Filsi"
+            // },
+            // {
+            //     url: "kokasauna11",
+            //     img: "",
+            //     name: "Lao ja tööstushoone",
+            //     client: "Maru",
+            //     finishDate: "20.09.2022",
+            //     location: "maardu",
+            //     completedBy: "Filsi"
+            // },
 
         ],
         partners: [
@@ -164,28 +197,32 @@ const state = {
             {name: 'ESB', logo: esbLogo},
             {name: 'Harju El.', logo: harjuLogo},
             {name: 'Stokker', logo: stokkerLogo},
-            {name: 'Melker', logo: melkerLogo}
+            {name: 'Melker', logo: melkerLogo},
+            {name: 'Combicon', logo: combiconLogo}
         ]
     }],
     contact: [{
         contactInfo: [
             {
-                heading: "Our Location",
-                midInfo: "350 Fifth Avenue, 34th floor New York",
-                lowInfo: "NY 10118-3299 USA",
-                icon: "https://themesflat.co/html/nah/images/icon/c1.png"
+                heading: "Meie Asukoht",
+                midInfo: "Suur-Männiku 8",
+                lowInfo: "Tallinn Harjumaa 11216",
+                icon: locationIcon,
+                className: ""
             },
             {
-                heading: "Contact us",
+                heading: "Võtke meiega ühendust",
                 midInfo: "Mobile: (+1) 800 555 888",
                 lowInfo: "Fax: (+1) 800 666 999",
-                icon: "https://themesflat.co/html/nah/images/icon/c1.png"
+                icon: contactIcon,
+                className: "lowInfo"
             },
             {
-                heading: "Write Some Words",
-                midInfo: "Support24/7@domain.com",
-                lowInfo: "Info@domain.com",
-                icon: "https://themesflat.co/html/nah/images/icon/c1.png"
+                heading: "Kirjutage meile",
+                midInfo: "filsi@filsi.ee",
+                lowInfo: ".",
+                icon: emailIcon,
+                className: "lowInfo"
             },
         ],
         pageInfoContact: [
@@ -196,48 +233,48 @@ const state = {
     equipment: [{
         equipmentInfo: [
             {
-                equipmentImg: "https://cdn6.regie-agricole.com/l92704190-1/john-deere-traktor-6215r.jpg",
-                equipmentName: "Traktor",
-                equipmentDesc: "Погрузчик JCB 930 с эксплуатационной массой 6340 кг приводится в действие двигателем JCB Dieselmax мощностью 55 кВт и обладает максимальной грузоподъемностью 3000 кг.\n" +
+                equipmentImg: jcb4x,
+                equipmentName: "JCB 4CX",
+                equipmentDesc: "\n" +
+                    "4CX on JCB esinduslik ekskavaator-pogur. See masin ühendab endas klassikalise esilaaduri omadused suurepärase ekskavaatoritöö võimekusega.\n" +
                     "\n" +
-                    "На выбор доступно несколько вариантов грузоподъемных мачт с высотой подъема от 3,6 до 5,5 м.\n" +
+                    "Maksimaalne kaevamissügavus: 5,88 m,\n" +
+                    "Mootori nimivõimsus: 74,2 kW,\n" +
+                    "Maksimaalne tõstekõrgus: 4638 kg,\n" +
+                    "4CX ECO pakub suurepärast tootlikkust ja väljapaistvaid tööomadusi, sealhulgas:\n" +
                     "\n" +
-                    "Помимо этого, механическая коробка передач JCB позволяет добиться быстрого и плавного переключения направления движения, а боковое смещение каретки дает возможность максимально точно позиционировать груз."
+                    "4-rattavedu ja suur maapinnakliirens\n" +
+                    "Suur koppmaht (1,1 m³) ja hea nähtavus\n" +
+                    "EcoLoad süsteem tagab suurema tõmbejõu\n" +
+                    "Vastupidavad materjalid ekstreemsetes tingimustes\n" +
+                    "Usaldusväärne pidurisüsteem ja suurepärane mugavus operaatrile\n" +
+                    "4CX on kvaliteetne masin, mille igat toodetud eksemplari kontrollitakse kõrgelt standarditele vastavuse tagamiseks. See tagab ohutuse, vastupidavuse ja optimaalse töökeskkonna."
             },
             {
-                equipmentImg: "https://cdn6.regie-agricole.com/l92704190-1/john-deere-traktor-6215r.jpg",
-                equipmentName: "Traktor",
-                equipmentDesc: "lorefldskfldsk l;fklsd;fklsd;k l;fkdsl;k l;kfdls;k l;fkl;sdkfdsl kl;ds"
+                equipmentImg: yanmar_vio80,
+                equipmentName: "Yanmar VIO80",
+                equipmentDesc: "Suurepärane kulutulemus. Ekskavaator sobib erinevatele objektidele. Mugav isegi kitsastes ruumides töötades. Suurepärane vastupidavus, tugevus ja avar kabiin muudavad selle kasutamise lihtsaks ja sobivad ideaalselt pikkadeks töötundideks. Väga kulutõhus. Kogege töökindlat ja tõestatud tulemustega ehitusmasinat"
             },
             {
-                equipmentImg: "https://cdn6.regie-agricole.com/l92704190-1/john-deere-traktor-6215r.jpg",
-                equipmentName: "Traktor",
-                equipmentDesc: "lorefldskfldsk l;fklsd;fklsd;k l;fkdsl;k l;kfdls;k l;fkl;sdkfdsl kl;ds"
+                equipmentImg: yanmar_vio23,
+                equipmentName: "Yanmar VIO23",
+                equipmentDesc: "Turvaliseks töötamiseks kitsastes oludes loodud ViO23 on tänu ülestõmmatavale veermikule ja väikesele kaalule lihtne transportida. Täiustatud hüdraulika ja kaudsissepritsega mootor annavad sellele palju täpsust, kui see on oluline. Palju on ette nähtud ka juhile, alates täiustatud turvafunktsioonidest kuni mugavuspõhise disainini üllatavalt ruumikas salongis. Kiiret ja lihtsat hooldust saab kiirendada SmartAssist Remote'iga, mis pakub ka hulgaliselt masinapargi halduse, tootlikkuse ja turvalisuse eeliseid."
             },
             {
-                equipmentImg: "https://cdn6.regie-agricole.com/l92704190-1/john-deere-traktor-6215r.jpg",
-                equipmentName: "Traktor",
-                equipmentDesc: "lorefldskfldsk l;fklsd;fklsd;k l;fkdsl;k l;kfdls;k l;fkl;sdkfdsl kl;ds"
+                equipmentImg: yanmar_svo8,
+                equipmentName: "Yanmar SVO8",
+                equipmentDesc: "YANMAR ultra-mini ekskavaator on uhke erakordse tööomadustega. Kaaludes alla 1 tonni, saab selle ultra-mini ekskavaatori ekskavaatoreid sujuvalt kasutada ja manööverdada suletud ruumides. Ekskavaatoril on lihtne siseneda läbi väravate ja läbi tagatänavate elumajade vahel tänu oma kompaktsele konstruktsioonile. Selle tõelist tulemuslikkust võib näha mitmesugustes toimingutes, nagu elamute vundamenditööd, hoonete ehituslikud ümberehitused, vee- ja kanalisatsioonitorude paigaldamine ning haljastus"
             },
             {
-                equipmentImg: "https://cdn6.regie-agricole.com/l92704190-1/john-deere-traktor-6215r.jpg",
-                equipmentName: "Traktor",
-                equipmentDesc: "lorefldskfldsk l;fklsd;fklsd;k l;fkdsl;k l;kfdls;k l;fkl;sdkfdsl kl;ds"
+                equipmentImg: bobcat_s175,
+                equipmentName: "Bobcat S175",
+                equipmentDesc: "Bobcat S175 on suurepärane laadur paljude aastate kasutamiseks. S175 Bobcat ühendab tõestatud vöötehnoloogia nullraadiusega pööramise ja suurepärase nähtavusega, et maksimeerida tootlikkust. Tõstuki käsivarred on madala profiiliga ja annavad kitsastes ruumides töötades selge ülevaate Bobcat S175 külgedest, esi- ja tagaküljest. Räägime kõigist Bobcatiga ratsutamise eelistest. See võib olla raske töö, kuid mugavused kodus on olemas teile oma takso. Sisenemine ja väljumine on lihtne tagumise pivoti istmeribaga ning uuenduslikud mõõteriistad ja juhtseadmed muudavad elu palju lihtsamaks."
             },
             {
-                equipmentImg: "https://cdn6.regie-agricole.com/l92704190-1/john-deere-traktor-6215r.jpg",
-                equipmentName: "Traktor",
-                equipmentDesc: "lorefldskfldsk l;fklsd;fklsd;k l;fkdsl;k l;kfdls;k l;fkl;sdkfdsl kl;ds"
-            },
-            {
-                equipmentImg: "https://cdn6.regie-agricole.com/l92704190-1/john-deere-traktor-6215r.jpg",
-                equipmentName: "Traktor",
-                equipmentDesc: "lorefldskfldsk l;fklsd;fklsd;k l;fkdsl;k l;kfdls;k l;fkl;sdkfdsl kl;ds"
-            },
-            {
-                equipmentImg: "https://cdn6.regie-agricole.com/l92704190-1/john-deere-traktor-6215r.jpg",
-                equipmentName: "Traktor",
-                equipmentDesc: "lorefldskfldsk l;fklsd;fklsd;k l;fkdsl;k l;kfdls;k l;fkl;sdkfdsl kl;ds"
+                equipmentImg: bobcat_e16,
+                equipmentName: "Bobcat E16",
+                equipmentDesc: "Bobcat E16 miniekskavaatoril on kompaktsed mõõtmed suhteliselt suure võimsuse juures. See kõik võimaldab kiiresti ja edukalt teha töid suletud ruumides ja kohtades, kus on vaja hoolsust tööde tegemisel.\n" +
+                    "Bobcat E16 mudelil on muljetavaldavad tehnilised omadused, suur kiirus ja manööverdusvõime, mis tagab igasuguse keerukusega tööde tegemise kiiruse ja kvaliteedi.  "
             }
 
         ],
@@ -247,7 +284,7 @@ const state = {
     }],
     about: [{
         pageInfoAbout: [
-            {upperHeading: "meist", lowerHeading: "", supHeading: ""}
+            {upperHeading: "meie", lowerHeading: "ettevõtest", supHeading: ""}
         ],
     }]
 

@@ -21,7 +21,7 @@ function App(props) {
         <Routes>
             <Route path="/" element={<Home state={props.state.home}/>} />
             <Route path="/teenused" element={<Services state={props.state.home}/>} />
-            <Route path="/tehtud-projektid" element={<Projects state={props.state.home}/>} />
+            <Route path="/projektid" element={<Projects state={props.state.home}/>} />
             <Route path="/kontakt" element={<Contact state={props.state.contact}/>} />
             <Route path="/tehnika" element={<Equipment state={props.state.equipment}/>} />
             <Route path="/projektid/kakumae-sadam" element={<SpecProject id="0" state={props.state.home}/>} />

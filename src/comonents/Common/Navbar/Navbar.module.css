@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-ul {
+.navMenu {
     list-style: none;
 }
 
@@ -33,6 +33,7 @@ a {
     width: 1602px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -65,6 +66,7 @@ a {
 }
 
 .navMenu li:after {
+
     background-color: #EDB820;
     content: '';
     position: absolute;
@@ -84,6 +86,7 @@ a {
 }
 
 
+
 /* media queries */
 
 @media screen and (max-width: 780px){
@@ -91,7 +94,7 @@ a {
     .navbar{
         position: relative;
         min-height: 67px;
-        background-color: #666666 !important;
+        background-color: #242424 !important;
         padding: 10px 20px;
         display: flex;
         justify-content: space-between;
@@ -108,7 +111,7 @@ a {
     }
 
     .bar {
-        background-color: #120f0b;
+        background-color: white;
         width: 20px;
         height: 3px;
         display: block;
@@ -127,6 +130,8 @@ a {
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
+
+
 
 
     /* navMenu */

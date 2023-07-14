@@ -30,6 +30,10 @@
     text-transform: uppercase;
 }
 
+.lowInfo{
+    color: white;
+}
+
 .contactContent{
     display: flex;
     justify-content: space-between;
@@ -88,6 +92,7 @@
     }
 
     .contactContent {
+        margin-top: 60px;
         gap: 70px;
         justify-content: center;
         flex-direction: column;

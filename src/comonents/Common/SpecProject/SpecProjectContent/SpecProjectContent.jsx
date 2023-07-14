@@ -6,7 +6,6 @@ const SpecProjectContent = (props) => {
         <div className={Styles.wrapper}>
             <div className={Styles.header}>
                 <h1>{props.state.name}</h1>
-                <h3>SOme data</h3>
             </div>
             <div className={Styles.projectImg}>
                 <img src={props.state.img}
@@ -21,19 +20,15 @@ const SpecProjectContent = (props) => {
                     </thead>
                     <tbody className={Styles.tableBody}>
                         <tr>
-                            <td className={Styles.label}>Client</td>
-                            <td>{props.state.client}</td>
-                        </tr>
-                        <tr>
-                            <td className={Styles.label}>Completion Date</td>
+                            <td className={Styles.label}>Lõpetamise kuupäev</td>
                             <td>{props.state.finishDate}</td>
                         </tr>
                         <tr>
-                            <td className={Styles.label}>Location</td>
+                            <td className={Styles.label}>Asukoht</td>
                             <td>{props.state.location}</td>
                         </tr>
                         <tr>
-                            <td className={Styles.label}>Completed by</td>
+                            <td className={Styles.label}>Tellija</td>
                             <td>{props.state.completedBy}</td>
                         </tr>
                     </tbody>

@@ -6,24 +6,6 @@
 }
 
 
-.projectsGalleryContent{
-    max-width: 1300px;
-    height: 330px;
-    background-color: #242424;
-}
-
-.projectsHeading{
-    text-transform: uppercase;
-    color: white;
-    padding: 75px 150px;
-}
-
-.projectsHeading h1{
-    font-family: 'Bungee Outline', cursive;
-    font-size: 72px;
-    line-height: 80px;
-
-}
 
 .projectName{
     max-width: inherit;
@@ -42,11 +24,7 @@
 }
 
 
-.projectsHeading p{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-}
+
 
 .projectPhotos{
     max-width: 1700px;
@@ -77,12 +55,14 @@
 .project{
     cursor: pointer;
     max-width: 540px;
-    max-height: 705px;
+    height: 805px;
 }
 
 .serviceImg{
+    object-fit: cover;
+    display: block;
     width: 540px;
-    height: 605px;
+    height: 705px;
     -webkit-filter: brightness(100%);
 
 }
@@ -137,12 +117,38 @@
         font-size: 10px;
     }
     .serviceImg{
-        max-height: 350px;
-        max-width: 350px ;
+        height: 350px;
+        width: 350px ;
     }
 
     .projectPhotos{
         display: flex;
         justify-content: center;
     }
+
+    .project{
+        height: 450px;
+    }
+}
+
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px) {
+    .projectPhotos{
+        max-width: 1302px !important;
+    }
+
+    .project{
+        max-width: 400px;
+        height: 605px;
+    }
+
+    .serviceImg{
+
+        max-width: 400px;
+        height: 505px;
+
+    }
+
+
 }

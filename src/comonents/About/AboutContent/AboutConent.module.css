@@ -1,27 +1,4 @@
-.servicesHeading{
-    max-width: 1300px;
-    text-transform: uppercase;
-    color: white;
-    padding: 75px 150px;
-    background-color: #242424;
 
-}
-
-
-
-
-.servicesHeading h1{
-    font-family: 'Bungee Outline', cursive;
-    font-size: 72px;
-    line-height: 80px;
-
-}
-
-.servicesHeading p{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-}
 
 .aboutContent{
     justify-content: space-between;
@@ -31,6 +8,7 @@
 }
 
 .textInfo{
+    text-align: justify;
     display: block;
     width: 30%;
 
@@ -49,12 +27,13 @@
 .img{
     display: flex;
     justify-content: flex-end;
-    width: 70%;
+    width: 63%;
 }
 
 .img img{
-    width: 85%;
-    height: 600px;
+    object-fit: cover;
+    width: 95%;
+    height: 100%;
 }
 
 
@@ -96,6 +75,7 @@
 
     .aboutContent{
         flex-direction: column;
+        margin-top: 30px;
     }
 
     .textInfo{
@@ -121,4 +101,12 @@
         font-size: 30px;
     }
 
+}
+
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px){
+    .aboutContent{
+        max-width: 1150px;
+    }
 }

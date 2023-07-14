@@ -1,7 +1,12 @@
 
 .partnersWrapper{
-    margin-top: 115px;
+    /*margin-top: 115px;*/
     margin-bottom: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+
 }
 
 .partnersHeading{
@@ -23,6 +28,7 @@
 }
 
 .partnerLogo{
+    object-fit: contain;
     width: 220px;
     height: 150px;
 }
@@ -31,6 +37,7 @@
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
+    /*justify-content: space-between;*/
     gap: 80px;
 }
 
@@ -58,4 +65,21 @@
         margin-right: 90px;
     }
 
+}
+
+
+@media screen and (max-width: 780px){
+    .partnersHeading{
+       margin-top: 40px;
+    }
+
+    .partnersList{
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .partnerLogo{
+        width: 130px;
+        height: 150px;
+    }
 }

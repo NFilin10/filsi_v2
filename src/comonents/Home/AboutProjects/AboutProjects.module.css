@@ -21,6 +21,7 @@
 
 
 .aboutProjectsContent{
+
     margin: 180.5px auto;
     max-width: 1603px;
     height: 100%;
@@ -37,6 +38,10 @@
         background-color: transparent;
 
         width: auto;
-
     }
+    .aboutProjectsWrapper {
+        min-height: 1340px;
+    }
+
+
 }

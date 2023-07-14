@@ -12,7 +12,7 @@ function Navbar(props) {
     const [showNavbar, setShowNavbar] = useState(true)
     const location = useLocation()
     useEffect(() => {
-        if (location.pathname === '/tehtud-projektid' || location.pathname === '/teenused' || location.pathname === '/kontakt' ||  location.pathname === '/tehnika' || location.pathname === '/kakumae-sadam' || location.pathname === '/meist'){
+        if (location.pathname === '/projektid' || location.pathname === '/teenused' || location.pathname === '/kontakt' ||  location.pathname === '/tehnika' || location.pathname === '/kakumae-sadam' || location.pathname === '/meist'){
             setShowNavbar(false)
         } else {
             setShowNavbar(true)
@@ -24,6 +24,9 @@ function Navbar(props) {
     // adding the states
     const [isActive, setIsActive] = useState(false);
 
+    if (isActive){
+
+    }
 
     //add the active class
     const toggleActiveClass = () => {
@@ -37,7 +40,6 @@ function Navbar(props) {
     }
 
 
-
     return (
 
 
@@ -49,13 +51,13 @@ function Navbar(props) {
 
                 <ul className={`${Styles.navMenu} ${isActive ? Styles.active : ''}`}>
                     <li onClick={removeActive}>
-                        <Link to='/' className={`${Styles.navLink}`}>Esileht</Link>
+                        <Link to='/' className={`${Styles.navLink}`} >Esileht</Link>
                     </li>
                     <li onClick={removeActive}>
-                        <Link to='/teenused' className={`${Styles.navLink}`}>Teenused</Link>
+                        <Link to='/teenused' className={`${Styles.navLink}`} >Teenused</Link>
                     </li>
                     <li onClick={removeActive}>
-                        <Link to='/tehtud-projektid' className={`${Styles.navLink}`}>Tehtud too</Link>
+                        <Link to='/projektid' className={`${Styles.navLink}`}>Tehtud too</Link>
                     </li>
                     <li onClick={removeActive}>
                         <Link to='/meist' className={`${Styles.navLink}`}>Firmast</Link>
