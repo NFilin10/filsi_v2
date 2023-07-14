@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 
 import Styles from './Partners.module.css'
 import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 

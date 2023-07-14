@@ -83,7 +83,9 @@ body {
     }
 
     .sliderText1{
-        font-size: 8px;
+        text-shadow: 1px 1px black;
+
+        font-size: 13px;
     }
 
     .sliderText2{

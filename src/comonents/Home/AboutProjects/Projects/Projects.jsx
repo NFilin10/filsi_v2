@@ -7,6 +7,8 @@ import Styles from './Projects.module.css'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import {Link} from "react-router-dom";
+import "aos/dist/aos.css";
+
 import AOS from "aos";
 
 const Projects = (props) => {
@@ -48,7 +50,7 @@ const Projects = (props) => {
     }, []);
 
     return (
-        <div className={Styles.projectsWrapper} data-aos="fade-left"  data-aos-duration="1500">
+        <div className={Styles.projectsWrapper} data-aos="fade-up" data-aos-duration="1500">
             <h3 className={Styles.projectSectionHeading}>Vaata, mida me oleme võimelised</h3>
             <Carousel
                 swipeable={true}
