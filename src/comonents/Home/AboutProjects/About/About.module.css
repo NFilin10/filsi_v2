@@ -69,8 +69,8 @@
     padding: 20px 40px;
     border: 1px solid #0072A8;
     color: white;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 10px;
+    font-weight: 500;
     transform: scale(1);
     transition: border-color 300ms ease-out, color 300ms ease-out;
 }

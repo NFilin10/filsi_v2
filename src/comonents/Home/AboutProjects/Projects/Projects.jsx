@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 import './CarouselComp.css'
 
@@ -7,6 +7,7 @@ import Styles from './Projects.module.css'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import {Link} from "react-router-dom";
+import AOS from "aos";
 
 const Projects = (props) => {
 
@@ -37,13 +38,17 @@ const Projects = (props) => {
                 <div className={Styles.projectName}>{project.name}</div>
             </div>
         </Link>
-       
+
     )
 
 
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
 
     return (
-        <div className={Styles.projectsWrapper}>
+        <div className={Styles.projectsWrapper} data-aos="fade-left"  data-aos-duration="1500">
             <h3 className={Styles.projectSectionHeading}>Vaata, mida me oleme võimelised</h3>
             <Carousel
                 swipeable={true}

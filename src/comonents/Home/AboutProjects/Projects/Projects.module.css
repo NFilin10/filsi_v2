@@ -31,7 +31,7 @@
 
 }
 
-.projectImg:hover{
+.project:hover{
     -webkit-filter: brightness(70%);
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
@@ -42,10 +42,12 @@
 
 
 .projectImg:hover + .projectName{
+    transition: all .5s ease;
     background-color: #0072A8;
 }
 
 .projectName:hover{
+    transition: all .5s ease;
     background-color: #0072A8;
 }
 

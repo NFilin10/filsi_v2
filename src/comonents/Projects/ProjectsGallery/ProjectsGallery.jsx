@@ -4,6 +4,7 @@ import Styles from './ProjectsGallery.module.css'
 import {useLocation} from "react-router-dom";
 import { Link } from 'react-router-dom';
 import PageHeading from "../../Common/PageHeading/PageHeading";
+import AOS from "aos";
 
 
 const ProjectsGallery = (props) => {
@@ -40,13 +41,18 @@ const ProjectsGallery = (props) => {
 
     let projectElements = slice.map(project =>
         <Link to={"/projektid/" + project.url}>
-            <div className={Styles.project}>
+            <div className={Styles.project} data-aos="fade-down"  data-aos-duration="1500">
                 <img className={Styles.serviceImg}  src={project.img}  alt=""/>
                 <div className={Styles.projectName}>{project.name}</div>
             </div>
         </Link>
 
     )
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
 
     return (
         <div className={Styles.projectsGalleryContainer}>

@@ -1,7 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Styles from './SpecProjectContent.module.css'
+import AOS from "aos";
 
 const SpecProjectContent = (props) => {
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
     return (
         <div className={Styles.wrapper}>
             <div className={Styles.header}>
@@ -11,7 +18,7 @@ const SpecProjectContent = (props) => {
                 <img src={props.state.img}
                      alt=""/>
             </div>
-            <div className={Styles.content}>
+            <div className={Styles.content} data-aos="zoom-in-up">
                 <table>
                     <thead>
                     <tr>

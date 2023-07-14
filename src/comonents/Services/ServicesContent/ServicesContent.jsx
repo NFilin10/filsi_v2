@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import Styles from './ServicesContent.module.css'
 import {useLocation} from "react-router-dom";
 import PageHeading from "../../Common/PageHeading/PageHeading";
+import AOS from "aos";
 
 const ServicesContent = (props) => {
 
@@ -24,7 +25,7 @@ const ServicesContent = (props) => {
 
     let servicesElement = props.state.services.map(service =>
 
-        <div className={Styles.service}>
+        <div className={Styles.service} data-aos="flip-up"  data-aos-duration="1500">
             <img className={Styles.serviceImg} src={service.serviceImg} alt=""/>
             <div className={Styles.serviceDescription}>
                 <h3>{service.serviceName}</h3>
@@ -37,6 +38,11 @@ const ServicesContent = (props) => {
 
         </div>
     )
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
 
     return(
 

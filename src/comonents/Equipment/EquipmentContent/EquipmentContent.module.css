@@ -25,10 +25,29 @@
 
 .equipment{
     /*width: 312px;*/
+    cursor: pointer;
     box-shadow: rgba(0, 114, 168, 0.3) 6px 8px 25px;
 
-
 }
+
+.equipment:hover{
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    /*transition: all .5s ease;*/
+}
+
+
+.equipmentImg:hover + .equipmentDescription{
+    background-color: #0072A8;
+}
+
+.equipmentDescription:hover{
+    background-color: #0072A8;
+}
+
 .equipmentImg{
     height: 400px;
     width: 502px;

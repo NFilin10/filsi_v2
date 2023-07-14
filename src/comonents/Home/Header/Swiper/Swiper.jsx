@@ -13,6 +13,7 @@ import './SwiperComp.css';
 
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
+import {Link} from "react-router-dom";
 
 export default function SwiperComp(props) {
     let swiperElement = props.state.map(slide =>
@@ -22,7 +23,7 @@ export default function SwiperComp(props) {
                 <h3 className={Styles.sliderText1}>{slide.text1}</h3>
                 <h1 className={Styles.sliderText2}>{slide.text2}</h1>
                 <div className={Styles.sliderBtnWrapper}>
-                    <a className={Styles.sliderBtn} href="#">{slide.btnText}</a>
+                    <Link className={Styles.sliderBtn} to="/meist">{slide.btnText}</Link>
                 </div>
             </div>
 

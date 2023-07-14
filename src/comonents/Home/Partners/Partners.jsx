@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 import Styles from './Partners.module.css'
+import AOS from "aos";
 
 
 
@@ -8,11 +9,16 @@ const Partners = (props) => {
 
 
     let partnersElements = props.state.map(partner =>
-        <div className={Styles.partners}>
+        <div className={Styles.partners} data-aos="zoom-in">
             <img className={Styles.partnerLogo} src={partner.logo} alt=""/>
             {/*<h3>{partner.name}</h3>*/}
         </div>
     )
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
 
     return (
         <div className={Styles.partnersWrapper}>

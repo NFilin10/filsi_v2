@@ -25,9 +25,13 @@
 .service{
     width: 380px;
     box-shadow: rgba(0, 114, 168, 0.3) 6px 8px 25px;
-
-
+    transition: transform .7s !important;
 }
+
+.service:hover{
+    transform: scale(1.05) !important;
+}
+
 .serviceImg{
     display: block;
     height: 210px;

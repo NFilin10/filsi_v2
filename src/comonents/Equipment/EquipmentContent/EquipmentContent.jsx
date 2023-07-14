@@ -6,6 +6,7 @@ import 'reactjs-popup/dist/index.css';
 import './PopupComp.css'
 import {useLocation} from "react-router-dom";
 import PageHeading from "../../Common/PageHeading/PageHeading";
+import AOS from "aos";
 
 const EquipmentContent = (props) => {
 
@@ -30,10 +31,10 @@ const EquipmentContent = (props) => {
 
 
         <Popup trigger=
-                   {<div className={Styles.equipment}>
+                   {<div className={Styles.equipment} data-aos="fade-down" data-aos-duration="1800">
                        <img className={Styles.equipmentImg} src={equipment.equipmentImg} alt=""/>
                        <div className={Styles.equipmentDescription}>
-                           <div>{equipment.equipmentName}</div>
+                           <div className={Styles.equipmentName}>{equipment.equipmentName}</div>
                        </div>
                    </div>}
                modal nested>
@@ -60,6 +61,11 @@ const EquipmentContent = (props) => {
 
 
     )
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
 
     return (
         <div className={Styles.equipmentsContainer}>

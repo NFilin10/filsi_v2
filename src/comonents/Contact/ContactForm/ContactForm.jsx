@@ -1,10 +1,17 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 import Styles from './ContactForm.module.css'
+import AOS from "aos";
 
 const ContactForm = () => {
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
     return(
-        <div className={Styles.container}>
+        <div className={Styles.container} data-aos="zoom-in-up" data-aos-duration="1000">
             <div className={Styles.screen}>
                 <div className={Styles.screenHeader}>
                     <div className={Styles.screenHeaderLeft}>

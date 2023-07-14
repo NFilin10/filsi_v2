@@ -226,7 +226,7 @@ const state = {
             },
         ],
         pageInfoContact: [
-            {upperHeading: "kirjuta", lowerHeading: "meile", supHeading: ""}
+            {upperHeading: "meie", lowerHeading: "kontaktid", supHeading: ""}
         ]
     }
     ],
